@@ -36,6 +36,7 @@ When adding an asset, append its original source and intended usage here.
 `examples/free-instagram-dm-automation.html` records the page model for `/free-instagram-dm-automation/`:
 
 - Uses Figma feature-page tokens and the section rhythm observed in `/products/link-in-bio/` and `/products/ai-faq/`.
+- Uses `Desktop Navbar` values from `figma/tree.json`: 764.66px shell, 55px height, `#fafafa99` fill, `#e9eded` stroke, `#6a07e4` mark, `#071329` wordmark, and `#1e2943` nav text.
 - Uses Instagram-native post, story, and DM reference modules for comment-to-DM and reply demonstrations.
 - Uses actual localized Zorcha screenshots from `assets/product/`.
 - Uses public pricing language for Free plan positioning, including unlimited DMs, unlimited contacts, 20 FAQs, and upgrade-only advanced features.

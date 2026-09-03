@@ -19,6 +19,9 @@
       --figma-soft-muted:#8c919f;
       --figma-white:#ffffff;
       --figma-black:#000000;
+      --figma-nav-ink:#1e2943;
+      --figma-logo-purple:#6a07e4;
+      --figma-divider:#d3d8d8;
       --figma-purple:#720e8b;
       --figma-purple-soft:#e8bfe9;
       --figma-green:#90fab0;
@@ -28,7 +31,8 @@
       --figma-line-soft:#e8e8e826;
       --figma-surface-ice:#f8ffff;
       --figma-metal:#d9d9d9;
-      --figma-radius-nav:55px;
+      --figma-radius-nav:17px;
+      --figma-radius-nav-inner:15px;
       --figma-radius-card:32px;
       --figma-radius-module:24px;
       --figma-radius-pill:999px;
@@ -44,10 +48,15 @@
     a:focus-visible,summary:focus-visible{outline:3px solid var(--figma-purple);outline-offset:4px}
     .shell{width:min(var(--figma-max),calc(100% - 40px));margin:auto}
     .nav-wrap{position:fixed;top:32px;left:0;right:0;z-index:20;pointer-events:none}
-    .nav{width:min(765px,calc(100% - 40px));min-height:55px;margin:auto;padding:8px 10px 8px 22px;border:1px solid var(--figma-nav-border);border-radius:var(--figma-radius-nav);background:var(--figma-surface-glass);backdrop-filter:blur(18px);display:flex;align-items:center;justify-content:space-between;gap:22px;pointer-events:auto}
-    .nav img{width:91px}
-    .nav-links{display:flex;align-items:center;gap:26px;color:var(--figma-muted);font-size:14px;font-weight:700}
-    .nav-cta{min-height:38px;display:inline-flex;align-items:center;justify-content:center;padding:0 18px;border-radius:var(--figma-radius-pill);background:var(--figma-ink);color:var(--figma-white);font-size:14px;font-weight:800}
+    .nav{position:relative;width:min(764.66px,calc(100% - 40px));min-height:55px;margin:auto;padding:7px 8px 7px 10px;border:1px solid var(--figma-nav-border);border-radius:var(--figma-radius-nav);background:var(--figma-surface-glass);backdrop-filter:blur(24px);box-shadow:0 20px 32px -12px var(--figma-deep-glass);display:flex;align-items:center;gap:20px;pointer-events:auto;overflow:hidden}
+    .nav:before{content:"";position:absolute;inset:0;border-radius:var(--figma-radius-nav-inner);background:linear-gradient(0deg,var(--figma-cream-glass),var(--figma-surface-glass));pointer-events:none}
+    .brand-link,.nav-links{position:relative;z-index:1}
+    .brand-link{min-height:40px;display:flex;align-items:center;gap:10px;padding:0 10px;color:var(--figma-ink)}
+    .brand-mark{width:21px;height:21px;display:block}
+    .brand-wordmark{width:78px;height:auto;display:block}
+    .nav-divider{position:relative;z-index:1;width:1px;height:25px;background:var(--figma-divider);flex:0 0 auto}
+    .nav-links{margin-left:12px;display:flex;align-items:center;gap:28px;color:var(--figma-nav-ink);font-size:14px;font-weight:700}
+    .nav-cta{min-height:38px;display:inline-flex;align-items:center;justify-content:center;padding:0 18px;border-radius:11px;background:var(--figma-ink);color:var(--figma-white);font-size:14px;font-weight:800}
     .nav-cta:hover,.primary:hover{background:var(--figma-purple);color:var(--figma-white)}
     .hero{position:relative;min-height:100svh;background:var(--figma-deep);color:var(--figma-white);overflow:hidden;display:flex;flex-direction:column;justify-content:space-between}
     .hero-bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
@@ -171,8 +180,10 @@
     .legal{display:flex;justify-content:space-between;gap:24px;color:var(--figma-muted);font-size:13px;margin-top:74px}
     @media(max-width:980px){
       .nav-wrap{top:16px}
-      .nav{width:min(620px,calc(100% - 24px))}
+      .nav{width:min(620px,calc(100% - 24px));gap:12px}
       .nav-links a:not(.nav-cta){display:none}
+      .nav-divider{display:none}
+      .nav-links{margin-left:auto;gap:12px}
       .hero{min-height:auto;padding-bottom:80px}
       .hero-inner{padding-top:128px}
       .hero-stage{margin-top:58px}
@@ -207,7 +218,11 @@
 <body>
   <header class="nav-wrap" data-od-id="desktop-navbar">
     <nav class="nav" aria-label="Primary">
-      <a href="/" data-od-id="brand-link"><img src="../assets/brand/zorcha-wordmark.svg" width="81" height="20" alt="Zorcha"></a>
+      <a class="brand-link" href="/" data-od-id="brand-link" aria-label="Zorcha home">
+        <img class="brand-mark" src="../assets/brand/zorcha-mark.svg" width="21" height="21" alt="">
+        <img class="brand-wordmark" src="../assets/brand/zorcha-wordmark.svg" width="81" height="20" alt="Zorcha">
+      </a>
+      <span class="nav-divider" aria-hidden="true"></span>
       <div class="nav-links">
         <a href="/about/">About</a>
         <a href="/products/link-in-bio/">Product</a>
