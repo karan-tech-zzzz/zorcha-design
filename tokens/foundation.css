@@ -1,0 +1,41 @@
+@font-face {
+  font-family: "Plus Jakarta Sans";
+  src: url("../assets/fonts/plus-jakarta-sans.woff2") format("woff2");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Degular Display";
+  src: url("../assets/fonts/degular-display-700.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Degular Display";
+  src: url("../assets/fonts/degular-display-700-italic.woff2") format("woff2");
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+}
+
+:root {
+  --zorcha-font-body: "Plus Jakarta Sans", system-ui, -apple-system, "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+  --zorcha-font-display: "Degular Display", "Plus Jakarta Sans", system-ui, sans-serif;
+  --zorcha-font-mono: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+  --zorcha-space-1: 4px;
+  --zorcha-space-2: 8px;
+  --zorcha-space-3: 12px;
+  --zorcha-space-4: 16px;
+  --zorcha-space-6: 24px;
+  --zorcha-space-8: 32px;
+  --zorcha-space-12: 48px;
+  --zorcha-space-16: 64px;
+  --zorcha-radius-control: 8px;
+  --zorcha-radius-card: 24px;
+  --zorcha-border: 1px;
+  --zorcha-control-min: 44px;
+}

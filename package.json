@@ -1,0 +1,7 @@
+{
+  "name": "zorcha-design",
+  "private": true,
+  "scripts": {
+    "test": "node scripts/check.mjs"
+  }
+}

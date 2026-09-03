@@ -1,0 +1,19 @@
+:root,
+.zorcha-marketing {
+  --zorcha-primary-light: oklch(0.69 0.1892 296.45);
+  --zorcha-primary: oklch(0.48 0.2674 290.95);
+  --zorcha-ink: oklch(0.28 0.0505 265.86);
+  --zorcha-ink-muted: oklch(0.657 0.022 270.09);
+  --zorcha-ink-deep: oklch(0.19 0.048 261.06);
+  --zorcha-error: oklch(54.47% 0.242 22.81);
+  --zorcha-line: oklch(0.94 0.0043 197.08);
+  --zorcha-line-strong: oklch(0.88 0.0054 197.06);
+  --zorcha-canvas: oklch(98.51% 0 0);
+  --zorcha-surface: oklch(99.52% 0.0025 165.08);
+  --zorcha-surface-alt: oklch(0.985 0.004 271.37);
+  --zorcha-positive: oklch(0.69 0.1288 175.68);
+  --zorcha-negative: oklch(0.61 0.156963 51.6981);
+  --zorcha-rating: oklch(0.7982 0.1604 88.65);
+  --zorcha-marketing-heading: var(--zorcha-font-display);
+  --zorcha-marketing-body: var(--zorcha-font-body);
+}
