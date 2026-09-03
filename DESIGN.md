@@ -27,6 +27,7 @@ Choose the surface before layout. Do not combine their tokens casually.
 - DM/product feature pages use the production AI FAQ hero posture: dark scenic background, centered Meta Tech Provider badge, centered title/subtitle/action, and one focused Instagram DM mockup below the copy.
 - Purple is the action/energy signal; use it for the primary action, progress, or one decisive visual device.
 - Alternate editorial text fields with real imagery or product demonstrations; avoid repetitive feature-card grids.
+- SEO feature sections must stay scannable: one short answer, then cards, chips, stats, tables, screenshots, or accordions instead of continuous article paragraphs.
 - Large feature sections use 42–55px chapter radii; internal modules use 24–32px; nav CTA uses 11px; do not flatten these to a global radius.
 - Motion should explain progression: sticky sequences, controlled transforms, and carousel movement—not ambient decoration.
 

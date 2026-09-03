@@ -122,8 +122,12 @@
     .eyebrow{display:block;margin-bottom:20px;color:var(--figma-purple);font-size:13px;font-weight:900;letter-spacing:.12em;text-transform:uppercase}
     h2{margin:0;font-family:var(--figma-font-display);font-size:clamp(46px,6vw,88px);line-height:.92;letter-spacing:0}
     h3{margin:0;color:var(--figma-ink);font-size:22px;line-height:1.15}
-    p{margin:0;color:var(--figma-muted);font-size:18px;line-height:1.65}
+    p{margin:0;color:var(--figma-muted);font-size:17px;line-height:1.55}
     .copy{display:grid;gap:20px}
+    .pattern-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}
+    .pattern-card{min-height:190px;border-radius:var(--figma-radius-module);background:var(--figma-surface);padding:24px;box-shadow:0 1px 0 var(--figma-line-soft)}
+    .pattern-card b{display:block;margin-bottom:44px;color:var(--figma-purple);font-size:14px}
+    .pattern-card span{display:block;margin-top:10px;color:var(--figma-muted);font-size:15px;line-height:1.45}
     .cream{background:var(--figma-hero)}
     .module-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}
     .module{border-radius:var(--figma-radius-card);background:var(--figma-surface);padding:30px;box-shadow:0 1px 0 var(--figma-line-soft)}
@@ -133,6 +137,9 @@
     .limit-row{display:flex;justify-content:space-between;gap:20px;padding:18px 0;border-bottom:1px solid var(--figma-nav-border);color:var(--figma-muted);font-size:15px;line-height:1.4}
     .limit-row strong{color:var(--figma-ink)}
     .limit-row span{text-align:right}
+    .mini-checks{display:grid;gap:10px;margin-top:26px}
+    .mini-checks span{min-height:44px;display:flex;align-items:center;border-radius:16px;background:var(--figma-line-soft);padding:0 14px;color:var(--figma-ink);font-size:14px;font-weight:850}
+    .module.dark .mini-checks span{background:var(--figma-deep-glass);color:var(--figma-white);border:1px solid var(--figma-cream-glass)}
     .feature-band{padding:88px 0;background:var(--figma-ink);color:var(--figma-white)}
     .feature-band .shell{display:flex;align-items:center;justify-content:space-between;gap:40px}
     .band-title{max-width:760px;margin:0;color:var(--figma-white);font-family:var(--figma-font-display);font-size:clamp(46px,6vw,88px);line-height:.92;letter-spacing:0}
@@ -142,6 +149,8 @@
     .demo{display:grid;grid-template-columns:1fr .16fr 1fr;gap:18px;align-items:center}
     .demo .ig-post,.demo .ig-phone{min-height:430px;border-radius:34px}
     .keyword{display:inline-flex;align-items:center;min-height:48px;margin-top:30px;padding:0 18px;border-radius:var(--figma-radius-pill);background:var(--figma-ink);color:var(--figma-white);font-weight:900}
+    .flow-pills{display:flex;flex-wrap:wrap;gap:10px}
+    .flow-pills span{min-height:44px;display:inline-flex;align-items:center;border:1px solid var(--figma-nav-border);border-radius:999px;background:var(--figma-surface);padding:0 16px;color:var(--figma-ink);font-size:14px;font-weight:900}
     .arrow{height:2px;background:var(--figma-purple);position:relative}
     .arrow:after{content:"";position:absolute;right:-1px;top:50%;width:13px;height:13px;border-top:2px solid var(--figma-purple);border-right:2px solid var(--figma-purple);transform:translateY(-50%) rotate(45deg)}
     .screens{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}
@@ -149,10 +158,22 @@
     .screen img{width:100%;border-radius:24px;object-fit:contain;background:var(--figma-canvas)}
     .screen strong{display:block;margin:18px 10px 6px}
     .screen span{display:block;margin:0 10px 12px;color:var(--figma-muted);font-size:14px;line-height:1.45}
+    .keyword-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px}
+    .keyword-grid span{min-height:72px;display:grid;place-items:center;border-radius:22px;background:var(--figma-surface);color:var(--figma-ink);font-family:var(--figma-font-display);font-size:22px;font-weight:900}
     .stat-row{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px}
     .stat{min-height:160px;border-radius:32px;background:var(--figma-surface);padding:24px}
     .stat b{display:block;margin-bottom:28px;color:var(--figma-purple);font-size:36px;line-height:1}
     .stat span{color:var(--figma-muted);font-size:15px;line-height:1.5}
+    .safety-panel{display:grid;grid-template-columns:.85fr 1.15fr;gap:16px;align-items:stretch}
+    .meta-panel{border-radius:var(--figma-radius-card);background:var(--figma-deep);padding:28px;display:grid;place-items:center}
+    .meta-panel img{width:min(240px,80%);filter:brightness(0) invert(1)}
+    .setup-grid{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:12px}
+    .step-card{min-height:190px;border-radius:24px;background:var(--figma-surface);padding:20px;box-shadow:0 1px 0 var(--figma-line-soft)}
+    .step-card b{display:block;color:var(--figma-purple);font-size:30px;line-height:1;margin-bottom:46px}
+    .step-card span{color:var(--figma-muted);font-size:14px;line-height:1.45}
+    .compare-strip{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
+    .compare-chip{border-radius:22px;background:var(--figma-surface);padding:20px;color:var(--figma-ink);font-weight:900}
+    .compare-chip span{display:block;margin-top:8px;color:var(--figma-muted);font-size:14px;line-height:1.4;font-weight:700}
     table{width:100%;border-collapse:separate;border-spacing:0;border-radius:32px;overflow:hidden;background:var(--figma-surface)}
     th,td{padding:22px;border-bottom:1px solid var(--figma-nav-border);text-align:left;vertical-align:top}
     th{color:var(--figma-muted);font-size:13px;letter-spacing:.1em;text-transform:uppercase}
@@ -190,7 +211,7 @@
       .hero{min-height:auto;padding-bottom:80px}
       .hero-inner{padding-top:128px}
       .hero-stage{margin-top:58px}
-      .split,.module-grid,.screens,.stat-row{grid-template-columns:1fr}
+      .split,.module-grid,.screens,.stat-row,.pattern-grid,.keyword-grid,.safety-panel,.setup-grid,.compare-strip{grid-template-columns:1fr}
       .feature-band .shell,.latest-card{display:block}
       .feature-band .primary{margin-top:26px}
       .demo{grid-template-columns:1fr}
@@ -277,9 +298,10 @@
     <section class="section cream" data-od-id="what-is-instagram-dm-automation">
       <div class="shell split">
         <div><span class="eyebrow">DM Automation</span><h2>What Is Instagram DM Automation?</h2></div>
-        <div class="copy">
-          <p>Instagram DM automation turns high-intent actions into useful private conversations. Someone comments on a reel, replies to a story, or messages a keyword, and Zorcha sends the next step automatically.</p>
-          <p>Creators use it for lead magnets, discounts, launch waitlists, booking links, FAQs, product drops, and follow-up conversations without copying the same reply by hand.</p>
+        <div class="pattern-grid" data-od-id="automation-pattern">
+          <article class="pattern-card" data-od-id="pattern-trigger"><b>01</b><h3>Trigger</h3><span>Comment, story reply, or keyword DM.</span></article>
+          <article class="pattern-card" data-od-id="pattern-reply"><b>02</b><h3>Reply</h3><span>Zorcha sends the right private message.</span></article>
+          <article class="pattern-card" data-od-id="pattern-convert"><b>03</b><h3>Convert</h3><span>Share a link, guide, offer, FAQ, or next step.</span></article>
         </div>
       </div>
     </section>
@@ -297,7 +319,12 @@
           </article>
           <article class="module dark" data-od-id="free-plan-exclusions">
             <h3>Upgrade when you need more control</h3>
-            <p>Paid plans unlock personalised DMs, DM variations, advanced multi-message flows, data collection, follow-up engagement, short-link controls, and higher AI limits.</p>
+            <div class="mini-checks" aria-label="Paid plan exclusions">
+              <span>Personalised DMs</span>
+              <span>DM variations</span>
+              <span>Advanced multi-message flows</span>
+              <span>Higher AI limits</span>
+            </div>
           </article>
         </div>
       </div>
@@ -314,7 +341,12 @@
       <div class="shell split">
         <div><span class="eyebrow">Comment trigger</span><h2>Automate DMs From Instagram Comments</h2></div>
         <div class="copy">
-          <p>When someone comments on a post or reel, Zorcha can send the right DM while interest is still high. The flow can ask for a confirmation reply first, then deliver the resource, link, offer, or next step.</p>
+          <div class="flow-pills" data-od-id="comment-flow-pills">
+            <span>Comment GUIDE</span>
+            <span>Opening DM</span>
+            <span>Resource link</span>
+            <span>Follow-up prompt</span>
+          </div>
           <div class="demo" data-od-id="comment-dm-demonstration">
             <article class="ig-post" aria-label="Instagram comment">
               <div class="ig-top">
@@ -366,7 +398,16 @@
               <div class="ig-story-reply"><span>Send message</span><strong>LINK</strong></div>
             </div>
           </article>
-          <article class="module" data-od-id="story-use-cases-card"><h3>Story replies</h3><p>Story replies are high-intent because the follower is reacting to current content. Zorcha can move that moment into a useful DM flow for drops, webinars, limited offers, launches, event links, creator resources, and product questions.</p><span class="keyword">Trigger: story reply</span></article>
+          <article class="module" data-od-id="story-use-cases-card">
+            <h3>Story replies</h3>
+            <div class="mini-checks" aria-label="Story reply use cases">
+              <span>Drops</span>
+              <span>Webinars</span>
+              <span>Limited offers</span>
+              <span>Creator resources</span>
+            </div>
+            <span class="keyword">Trigger: story reply</span>
+          </article>
         </div>
       </div>
     </section>
@@ -375,7 +416,9 @@
       <div class="shell split">
         <div><span class="eyebrow">Keyword trigger</span><h2>Automatically Reply to DM Keywords</h2></div>
         <div class="copy">
-          <p>Keyword replies let followers ask for exactly what they want. A person can DM “price,” “guide,” “book,” or “link,” and Zorcha routes them to the right response.</p>
+          <div class="keyword-grid" data-od-id="keyword-examples">
+            <span>price</span><span>guide</span><span>book</span><span>link</span>
+          </div>
           <div class="screens" data-od-id="actual-zorcha-screenshots">
             <article class="screen" data-od-id="screenshot-automation"><img src="../assets/product/get-started-automation.webp" width="1200" height="1667" alt="Zorcha automation setup screenshot"><strong>Automation setup</strong><span>Create a trigger and launch the first DM workflow.</span></article>
             <article class="screen" data-od-id="screenshot-ai-faq"><img src="../assets/product/get-started-ai-faq.webp" width="1200" height="1667" alt="Zorcha AI FAQ setup screenshot"><strong>AI FAQ</strong><span>Answer repeated questions from the same workspace.</span></article>
@@ -396,7 +439,18 @@
       <div class="shell split">
         <div><span class="eyebrow">Safety</span><h2>Is Instagram DM Automation Safe?</h2></div>
         <div class="copy">
-          <p>Automation is safest when it uses official Meta APIs, respects permissions, and avoids spam-like behavior. Zorcha states that it is a Meta Tech Provider and that its Instagram automations run through official APIs.</p>
+          <div class="safety-panel" data-od-id="meta-api-proof">
+            <div class="meta-panel"><img src="../assets/figma-feature/meta-tech-provider.webp" width="550" height="240" alt="Meta Verified Tech Provider badge"></div>
+            <article class="module" data-od-id="safe-automation-rules">
+              <h3>Official API posture</h3>
+              <div class="mini-checks">
+                <span>Professional Instagram account</span>
+                <span>Meta-approved automation path</span>
+                <span>Relevant triggers only</span>
+                <span>Queue sends near limits</span>
+              </div>
+            </article>
+          </div>
           <div class="stat-row" data-od-id="safety-points">
             <article class="stat"><b>01</b><span>Use a Business or Creator Instagram account for API-backed automations.</span></article>
             <article class="stat"><b>02</b><span>Keep triggers relevant and avoid repetitive messages that feel like blasts.</span></article>
@@ -410,9 +464,12 @@
     <section class="section cream" data-od-id="setup">
       <div class="shell split">
         <div><span class="eyebrow">Setup</span><h2>How to Set Up Your First Automation</h2></div>
-        <div class="module-grid">
-          <article class="module" data-od-id="setup-steps"><h3>Five-step setup</h3><p>Connect Instagram, choose a comment or keyword trigger, write the opening message, add the main DM, then publish and track performance.</p></article>
-          <article class="module dark" data-od-id="setup-control"><h3>Control every part</h3><p>Use keywords, post selection, opening messages, links, follow-up rules, and AI FAQ answers as your flow becomes more advanced.</p></article>
+        <div class="setup-grid" data-od-id="setup-steps">
+          <article class="step-card"><b>1</b><h3>Connect</h3><span>Link Instagram.</span></article>
+          <article class="step-card"><b>2</b><h3>Trigger</h3><span>Pick comment, story, or keyword.</span></article>
+          <article class="step-card"><b>3</b><h3>Write</h3><span>Add the first DM.</span></article>
+          <article class="step-card"><b>4</b><h3>Publish</h3><span>Turn the flow on.</span></article>
+          <article class="step-card"><b>5</b><h3>Track</h3><span>Review replies and growth.</span></article>
         </div>
       </div>
     </section>
@@ -421,7 +478,11 @@
       <div class="shell split">
         <div><span class="eyebrow">Comparison</span><h2>Zorcha Free vs Other Free DM Automation Tools</h2></div>
         <div class="copy">
-          <p>The right free tool depends on what stays unlimited. Zorcha’s public positioning focuses on keeping DM volume, contacts, and the core Instagram growth loop accessible on the free plan.</p>
+          <div class="compare-strip" data-od-id="comparison-summary">
+            <div class="compare-chip">Instagram-first<span>Built around comments, stories, DMs, and creator growth.</span></div>
+            <div class="compare-chip">Free core loop<span>Unlimited DMs, automations, and contacts on the free plan.</span></div>
+            <div class="compare-chip">API-backed<span>Meta Tech Provider information supports safety claims.</span></div>
+          </div>
           <table data-od-id="comparison-table">
             <thead><tr><th>Capability</th><th>Zorcha Free</th><th>Typical free DM tool</th></tr></thead>
             <tbody>

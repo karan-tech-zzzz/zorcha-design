@@ -12,6 +12,7 @@
 
 - Start with the exact search-answer H1 and a concise short answer in the first viewport.
 - Keep the same feature-page visual language as product pages: large Degular hero, off-white content field, real product screenshots, Instagram-native DM/comment/story references, and rounded proof modules.
+- Avoid continuous article copy. Each H2 section should resolve into a short module, visual proof, chips, stats, a table, or an accordion. Use paragraphs only as brief support copy.
 - Place a clear CTA after every two or three content sections, varying CTA copy by context.
 - Include a comparison table only when it helps the query; keep claims sourced to pricing, help, or production copy.
 - Keep FAQ content practical and direct. Avoid keyword-stuffed repetition.
