@@ -16,4 +16,33 @@
   --zorcha-rating: oklch(0.7982 0.1604 88.65);
   --zorcha-marketing-heading: var(--zorcha-font-display);
   --zorcha-marketing-body: var(--zorcha-font-body);
+
+  /* Figma feature-page contract: feture_pages.fig / Desktop Navbar + Hero B */
+  --zorcha-feature-canvas: #faf9f6;
+  --zorcha-feature-cream: #f5f2eb;
+  --zorcha-feature-surface: #fcfefd;
+  --zorcha-feature-glass: #fafafa99;
+  --zorcha-feature-line: #e9eded;
+  --zorcha-feature-line-soft: #e8e8e826;
+  --zorcha-feature-ink: #071329;
+  --zorcha-feature-nav-ink: #1e2943;
+  --zorcha-feature-muted: #5c6270;
+  --zorcha-feature-muted-soft: #8c919f;
+  --zorcha-feature-logo: #6a07e4;
+  --zorcha-feature-divider: #d3d8d8;
+  --zorcha-feature-purple: #720e8b;
+  --zorcha-feature-purple-soft: #e8bfe9;
+  --zorcha-feature-green: #90fab0;
+  --zorcha-feature-deep: #0c0c0c;
+  --zorcha-feature-glass-dark: #0d111280;
+  --zorcha-feature-glass-cream: #faf9f64d;
+  --zorcha-feature-metal: #d9d9d9;
+  --zorcha-feature-nav-width: 764.66px;
+  --zorcha-feature-nav-height: 55px;
+  --zorcha-feature-nav-radius: 17px;
+  --zorcha-feature-nav-inner-radius: 15px;
+  --zorcha-feature-nav-cta-radius: 11px;
+  --zorcha-feature-card-radius: 32px;
+  --zorcha-feature-module-radius: 24px;
+  --zorcha-feature-section-radius: 55px;
 }

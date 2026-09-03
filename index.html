@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>Zorcha Design Language</title>
   <link rel="stylesheet" href="tokens/foundation.css">
+  <link rel="stylesheet" href="tokens/marketing.css">
   <link rel="stylesheet" href="tokens/product.css">
   <style>
     *{box-sizing:border-box}
@@ -14,7 +15,9 @@
     img{display:block;max-width:100%;height:auto}
     :focus-visible{outline:3px solid var(--zorcha-primary);outline-offset:3px}
     .nav{position:sticky;top:0;z-index:5;min-height:72px;display:flex;align-items:center;justify-content:space-between;gap:24px;padding:0 max(24px,calc((100vw - 1240px)/2));border-bottom:1px solid var(--zorcha-line-strong);background:var(--zorcha-surface)}
-    .nav img{width:104px}
+    .brand-link{min-height:44px;display:flex;align-items:center;gap:10px}
+    .brand-link img:first-child{width:21px;height:21px}
+    .brand-link img:last-child{width:78px;height:auto}
     .nav div{display:flex;gap:18px;color:var(--zorcha-ink-muted);font-size:13px;font-weight:700}
     .shell{width:min(1240px,calc(100% - 32px));margin:auto}
     .intro{padding:96px 0 72px}
@@ -23,10 +26,10 @@
     .intro p{max-width:720px;margin:0;color:var(--zorcha-ink-muted);font-size:20px;line-height:1.55}
     .surface-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;padding-bottom:80px}
     .surface{min-height:500px;border:1px solid var(--zorcha-line-strong);border-radius:24px;overflow:hidden}
-    .marketing{position:relative;display:flex;flex-direction:column;justify-content:space-between;padding:32px;background:var(--zorcha-ink-deep);color:var(--zorcha-surface)}
+    .marketing{position:relative;display:flex;flex-direction:column;justify-content:space-between;padding:32px;background:var(--zorcha-feature-deep);color:var(--zorcha-feature-surface)}
     .marketing h2{max-width:480px;margin:64px 0 20px;font-family:var(--zorcha-font-display);font-size:clamp(52px,6vw,86px);line-height:.82;letter-spacing:0}
     .marketing h2 em{color:var(--zorcha-primary-light)}
-    .marketing p{max-width:480px;color:var(--zorcha-line-strong);line-height:1.6}
+    .marketing p{max-width:480px;color:var(--zorcha-feature-line);line-height:1.6}
     .button{min-height:44px;display:inline-flex;align-items:center;justify-content:center;margin-top:28px;padding:0 18px;border-radius:999px;background:var(--zorcha-primary);color:var(--zorcha-surface);font-weight:800}
     .button:hover{background:var(--zorcha-ink-deep)}
     .surface-head{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:18px;border-bottom:1px solid var(--zorcha-line-strong)}
@@ -58,7 +61,7 @@
 </head>
 <body>
   <header class="nav" data-od-id="catalog-navigation">
-    <a href="#"><img src="assets/brand/zorcha-wordmark.svg" width="81" height="20" alt="Zorcha"></a>
+    <a class="brand-link" href="#" data-od-id="catalog-brand-link" aria-label="Zorcha design language home"><img src="assets/brand/zorcha-mark.svg" width="21" height="21" alt=""><img src="assets/brand/zorcha-wordmark.svg" width="81" height="20" alt="Zorcha"></a>
     <div>
       <a href="DESIGN.md">Design rules</a>
       <a href="tokens/tokens.json">Tokens</a>
@@ -77,8 +80,8 @@
       <article class="surface marketing" data-od-id="marketing-surface">
         <div>
           <span class="eyebrow">Marketing</span>
-          <h2>Attention into <em>action.</em></h2>
-          <p>Degular Display, strong campaign imagery, spacious storytelling, and one decisive purple action.</p>
+          <h2>Feature pages that match.</h2>
+          <p>Figma glass navbar, production dark hero, Instagram-native modules, rounded cream sections, and one decisive action.</p>
           <a class="button" href="templates/marketing-page.html">Open starter</a>
         </div>
       </article>
@@ -115,7 +118,7 @@
         <article class="rule"><b>01</b><span>Choose marketing or product before choosing components.</span></article>
         <article class="rule"><b>02</b><span>Use real assets and product language. Never fabricate live metrics.</span></article>
         <article class="rule"><b>03</b><span>Keep controls accessible and mobile layouts intentionally reordered.</span></article>
-        <article class="rule"><b>04</b><span>Evidence every new reusable pattern in Figma or production code.</span></article>
+        <article class="rule"><b>04</b><span>Feature-page components must trace back to the imported Figma file or live Zorcha product pages.</span></article>
       </div>
     </section>
   </main>

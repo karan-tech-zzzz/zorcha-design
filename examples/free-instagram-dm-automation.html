@@ -7,38 +7,39 @@
   <meta name="description" content="Zorcha lets creators automate unlimited Instagram DMs, automations, and contacts on its free plan. Learn how comments, story replies, and keywords become automated Instagram conversations.">
   <link rel="canonical" href="/free-instagram-dm-automation/">
   <link rel="stylesheet" href="../tokens/foundation.css">
+  <link rel="stylesheet" href="../tokens/marketing.css">
   <style>
     :root{
-      --figma-canvas:#faf9f6;
-      --figma-hero:#f5f2eb;
-      --figma-surface:#fcfefd;
-      --figma-surface-glass:#fafafa99;
-      --figma-nav-border:#e9eded;
-      --figma-ink:#071329;
-      --figma-muted:#5c6270;
-      --figma-soft-muted:#8c919f;
+      --figma-canvas:var(--zorcha-feature-canvas);
+      --figma-hero:var(--zorcha-feature-cream);
+      --figma-surface:var(--zorcha-feature-surface);
+      --figma-surface-glass:var(--zorcha-feature-glass);
+      --figma-nav-border:var(--zorcha-feature-line);
+      --figma-ink:var(--zorcha-feature-ink);
+      --figma-muted:var(--zorcha-feature-muted);
+      --figma-soft-muted:var(--zorcha-feature-muted-soft);
       --figma-white:#ffffff;
       --figma-black:#000000;
-      --figma-nav-ink:#1e2943;
-      --figma-logo-purple:#6a07e4;
-      --figma-divider:#d3d8d8;
-      --figma-purple:#720e8b;
-      --figma-purple-soft:#e8bfe9;
-      --figma-green:#90fab0;
-      --figma-deep:#0c0c0c;
-      --figma-deep-glass:#0d111280;
-      --figma-cream-glass:#faf9f64d;
-      --figma-line-soft:#e8e8e826;
+      --figma-nav-ink:var(--zorcha-feature-nav-ink);
+      --figma-logo-purple:var(--zorcha-feature-logo);
+      --figma-divider:var(--zorcha-feature-divider);
+      --figma-purple:var(--zorcha-feature-purple);
+      --figma-purple-soft:var(--zorcha-feature-purple-soft);
+      --figma-green:var(--zorcha-feature-green);
+      --figma-deep:var(--zorcha-feature-deep);
+      --figma-deep-glass:var(--zorcha-feature-glass-dark);
+      --figma-cream-glass:var(--zorcha-feature-glass-cream);
+      --figma-line-soft:var(--zorcha-feature-line-soft);
       --figma-surface-ice:#f8ffff;
-      --figma-metal:#d9d9d9;
-      --figma-radius-nav:17px;
-      --figma-radius-nav-inner:15px;
-      --figma-radius-card:32px;
-      --figma-radius-module:24px;
+      --figma-metal:var(--zorcha-feature-metal);
+      --figma-radius-nav:var(--zorcha-feature-nav-radius);
+      --figma-radius-nav-inner:var(--zorcha-feature-nav-inner-radius);
+      --figma-radius-card:var(--zorcha-feature-card-radius);
+      --figma-radius-module:var(--zorcha-feature-module-radius);
       --figma-radius-pill:999px;
       --figma-max:1260px;
-      --figma-font-body:"Plus Jakarta Sans",system-ui,-apple-system,"Segoe UI","Helvetica Neue",Arial,sans-serif;
-      --figma-font-display:"Degular Display","Plus Jakarta Sans",system-ui,sans-serif;
+      --figma-font-body:var(--zorcha-marketing-body);
+      --figma-font-display:var(--zorcha-marketing-heading);
     }
     *{box-sizing:border-box}
     html{background:var(--figma-canvas);color:var(--figma-ink)}
@@ -48,7 +49,7 @@
     a:focus-visible,summary:focus-visible{outline:3px solid var(--figma-purple);outline-offset:4px}
     .shell{width:min(var(--figma-max),calc(100% - 40px));margin:auto}
     .nav-wrap{position:fixed;top:32px;left:0;right:0;z-index:20;pointer-events:none}
-    .nav{position:relative;width:min(764.66px,calc(100% - 40px));min-height:55px;margin:auto;padding:7px 8px 7px 10px;border:1px solid var(--figma-nav-border);border-radius:var(--figma-radius-nav);background:var(--figma-surface-glass);backdrop-filter:blur(24px);box-shadow:0 20px 32px -12px var(--figma-deep-glass);display:flex;align-items:center;gap:20px;pointer-events:auto;overflow:hidden}
+    .nav{position:relative;width:min(var(--zorcha-feature-nav-width),calc(100% - 40px));min-height:var(--zorcha-feature-nav-height);margin:auto;padding:7px 8px 7px 10px;border:1px solid var(--figma-nav-border);border-radius:var(--figma-radius-nav);background:var(--figma-surface-glass);backdrop-filter:blur(24px);box-shadow:0 20px 32px -12px var(--figma-deep-glass);display:flex;align-items:center;gap:20px;pointer-events:auto;overflow:hidden}
     .nav:before{content:"";position:absolute;inset:0;border-radius:var(--figma-radius-nav-inner);background:linear-gradient(0deg,var(--figma-cream-glass),var(--figma-surface-glass));pointer-events:none}
     .brand-link,.nav-links{position:relative;z-index:1}
     .brand-link{min-height:40px;display:flex;align-items:center;gap:10px;padding:0 10px;color:var(--figma-ink)}
@@ -56,7 +57,8 @@
     .brand-wordmark{width:78px;height:auto;display:block}
     .nav-divider{position:relative;z-index:1;width:1px;height:25px;background:var(--figma-divider);flex:0 0 auto}
     .nav-links{margin-left:12px;display:flex;align-items:center;gap:28px;color:var(--figma-nav-ink);font-size:14px;font-weight:700}
-    .nav-cta{min-height:38px;display:inline-flex;align-items:center;justify-content:center;padding:0 18px;border-radius:11px;background:var(--figma-ink);color:var(--figma-white);font-size:14px;font-weight:800}
+    .nav-links a:nth-last-child(2){margin-left:72px}
+    .nav-cta{min-height:38px;display:inline-flex;align-items:center;justify-content:center;padding:0 18px;border-radius:var(--zorcha-feature-nav-cta-radius);background:var(--figma-ink);color:var(--figma-white);font-size:14px;font-weight:800}
     .nav-cta:hover,.primary:hover{background:var(--figma-purple);color:var(--figma-white)}
     .hero{position:relative;min-height:100svh;background:var(--figma-deep);color:var(--figma-white);overflow:hidden;display:flex;flex-direction:column;justify-content:space-between}
     .hero-bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
@@ -184,6 +186,7 @@
       .nav-links a:not(.nav-cta){display:none}
       .nav-divider{display:none}
       .nav-links{margin-left:auto;gap:12px}
+      .nav-links a:nth-last-child(2){margin-left:0}
       .hero{min-height:auto;padding-bottom:80px}
       .hero-inner{padding-top:128px}
       .hero-stage{margin-top:58px}
@@ -228,8 +231,7 @@
         <a href="/products/link-in-bio/">Product</a>
         <a href="/resources/">Resources</a>
         <a href="/pricing/">Pricing</a>
-        <a href="/signin/">Sign In</a>
-        <a class="nav-cta" href="/signup/" data-od-id="nav-get-started">Get Started</a>
+        <a class="nav-cta" href="/signin/" data-od-id="nav-sign-in">Sign In</a>
       </div>
     </nav>
   </header>

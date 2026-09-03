@@ -17,15 +17,17 @@ Choose the surface before layout. Do not combine their tokens casually.
 
 | Surface | Use for | Type hierarchy | Density | Primary geometry |
 | --- | --- | --- | --- | --- |
-| Marketing | Homepage, features, pricing, comparisons, launches | Degular Display + Plus Jakarta Sans | Airy | 16–24px cards, pill controls |
+| Marketing | Homepage, features, pricing, comparisons, launches | Degular Display + Plus Jakarta Sans | Airy | Figma navbar, dark feature hero, 24–55px cards |
 | Product | Dashboard, automations, audience, forms, AI Studio | Plus Jakarta Sans only | Compact | 24px outer cards, 8/18px nested cards |
 
 ## Marketing language
 
 - Lead with one oversized Degular Display statement and a short Plus Jakarta Sans explanation.
+- Feature pages use the Figma `Desktop Navbar`: 764.66px wide, 55px tall, translucent `#fafafa99` shell, `#e9eded` stroke, 17px radius, purple mark, navy wordmark, divider, four center links, and one visible 11px-radius Sign In pill in the resting hero state.
+- DM/product feature pages use the production AI FAQ hero posture: dark scenic background, centered Meta Tech Provider badge, centered title/subtitle/action, and one focused Instagram DM mockup below the copy.
 - Purple is the action/energy signal; use it for the primary action, progress, or one decisive visual device.
 - Alternate editorial text fields with real imagery or product demonstrations; avoid repetitive feature-card grids.
-- Large sections can use 64px top corners; internal content typically returns to 16–24px.
+- Large feature sections use 42–55px chapter radii; internal modules use 24–32px; nav CTA uses 11px; do not flatten these to a global radius.
 - Motion should explain progression: sticky sequences, controlled transforms, and carousel movement—not ambient decoration.
 
 Use `tokens/marketing.css` and `patterns/marketing.md`.
