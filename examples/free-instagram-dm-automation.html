@@ -26,6 +26,15 @@
       --figma-purple:var(--zorcha-feature-purple);
       --figma-purple-soft:var(--zorcha-feature-purple-soft);
       --figma-green:var(--zorcha-feature-green);
+      --figma-board-green:var(--zorcha-feature-board-green);
+      --figma-board-olive:var(--zorcha-feature-board-olive);
+      --figma-board-olive-glass:var(--zorcha-feature-board-olive-glass);
+      --figma-board-maroon:var(--zorcha-feature-board-maroon);
+      --figma-board-slate:var(--zorcha-feature-board-slate);
+      --figma-board-line:var(--zorcha-feature-board-line);
+      --figma-orbit-peach:var(--zorcha-feature-orbit-peach);
+      --figma-sphere-shadow:var(--zorcha-feature-sphere-shadow);
+      --figma-sphere-maroon:var(--zorcha-feature-sphere-maroon);
       --figma-deep:var(--zorcha-feature-deep);
       --figma-deep-glass:var(--zorcha-feature-glass-dark);
       --figma-cream-glass:var(--zorcha-feature-glass-cream);
@@ -174,6 +183,36 @@
     .compare-strip{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
     .compare-chip{border-radius:22px;background:var(--figma-surface);padding:20px;color:var(--figma-ink);font-weight:900}
     .compare-chip span{display:block;margin-top:8px;color:var(--figma-muted);font-size:14px;line-height:1.4;font-weight:700}
+    .movable-grid{display:grid;grid-template-columns:1fr 1fr;gap:32px}
+    .asset-card{position:relative;min-height:430px;border-radius:55px;padding:40px 38px;overflow:hidden;color:var(--figma-white);touch-action:pan-y}
+    .asset-card h3{max-width:520px;color:var(--figma-white);font-size:28px;line-height:1.1}
+    .asset-card p{max-width:520px;margin-top:22px;color:var(--figma-white);font-size:21px;line-height:1.35;opacity:.84}
+    .asset-stage{position:absolute;left:24px;right:24px;bottom:24px;height:250px}
+    .asset-card.slate{background:var(--figma-board-slate)}
+    .asset-card.olive{background:var(--figma-board-olive)}
+    .asset-card.maroon{background:var(--figma-board-maroon)}
+    .asset-card.green{background:var(--figma-board-green)}
+    .drag-asset{position:absolute;left:var(--x);top:var(--y);transform:translate(var(--dx,0px),var(--dy,0px)) rotate(var(--r,0deg));cursor:grab;user-select:none;touch-action:none;will-change:transform}
+    .drag-asset:active{cursor:grabbing}
+    .drag-asset:focus-visible{outline:3px solid var(--figma-purple-soft);outline-offset:4px}
+    .message-tile{width:min(430px,72vw);min-height:76px;display:flex;align-items:center;gap:14px;border:2px solid var(--figma-board-line);border-radius:24px;background:var(--figma-deep-glass);padding:12px 18px;box-shadow:0 22px 36px var(--figma-deep-glass);backdrop-filter:blur(10px)}
+    .message-tile img,.triage-card img{width:42px;height:42px;border-radius:50%;object-fit:cover}
+    .message-tile strong,.triage-card strong{display:block;color:var(--figma-white);font-size:16px;line-height:1.1}
+    .message-tile span,.triage-card span{display:block;margin-top:4px;color:var(--figma-white);font-size:15px;line-height:1.25;opacity:.82}
+    .orbit-lines{position:absolute;inset:8px -40px 0;border:2px dashed var(--figma-board-line);border-bottom:0;border-radius:50% 50% 0 0;opacity:.6}
+    .orbit-lines:after{content:"";position:absolute;left:12%;right:12%;top:46px;height:180px;border-top:1px dashed var(--figma-board-line);border-radius:50%}
+    .orbit-dot{width:15px;height:15px;border-radius:50%;background:var(--figma-green);box-shadow:0 0 0 4px var(--figma-deep-glass)}
+    .orbit-dot.peach{background:var(--figma-orbit-peach)}
+    .triage-stack{position:absolute;left:14%;right:8%;bottom:14px;height:190px}
+    .triage-card{width:min(520px,78vw);min-height:88px;border:4px solid var(--figma-board-line);border-radius:24px;background:var(--figma-deep);padding:18px 22px;color:var(--figma-white);box-shadow:0 22px 40px var(--figma-deep-glass)}
+    .triage-row{display:flex;align-items:center;gap:12px}
+    .status-pill{margin-left:auto;border-radius:999px;background:var(--figma-board-olive-glass);padding:8px 14px;color:var(--figma-orbit-peach);font-size:14px;font-weight:900}
+    .sentiment{display:block;margin-top:22px;color:var(--figma-white);font-family:var(--figma-font-body);font-size:21px;letter-spacing:.06em;text-transform:uppercase}
+    .orb{width:370px;height:370px;border-radius:50%;background:radial-gradient(circle at 72% 76%,var(--figma-metal) 0 9%,var(--figma-sphere-shadow) 25%,var(--figma-sphere-maroon) 58%,var(--figma-deep-glass) 72%);box-shadow:inset -28px -34px 70px var(--figma-deep-glass),0 0 0 14px var(--figma-line-soft)}
+    .language-cloud{width:430px;display:flex;flex-wrap:wrap;gap:14px 24px;color:var(--figma-white);font-size:26px;font-weight:900;line-height:1.2}
+    .language-cloud span:nth-child(2n){opacity:.78}
+    .language-cloud span:nth-child(3n){opacity:.58}
+    .wire-globe{width:340px;height:340px;border-radius:50%;background:repeating-radial-gradient(circle,var(--figma-board-line) 0 1px,transparent 2px 18px),repeating-linear-gradient(78deg,transparent 0 18px,var(--figma-board-line) 19px 20px);opacity:.85;box-shadow:inset 0 0 42px var(--figma-board-line)}
     table{width:100%;border-collapse:separate;border-spacing:0;border-radius:32px;overflow:hidden;background:var(--figma-surface)}
     th,td{padding:22px;border-bottom:1px solid var(--figma-nav-border);text-align:left;vertical-align:top}
     th{color:var(--figma-muted);font-size:13px;letter-spacing:.1em;text-transform:uppercase}
@@ -211,7 +250,7 @@
       .hero{min-height:auto;padding-bottom:80px}
       .hero-inner{padding-top:128px}
       .hero-stage{margin-top:58px}
-      .split,.module-grid,.screens,.stat-row,.pattern-grid,.keyword-grid,.safety-panel,.setup-grid,.compare-strip{grid-template-columns:1fr}
+      .split,.module-grid,.screens,.stat-row,.pattern-grid,.keyword-grid,.safety-panel,.setup-grid,.compare-strip,.movable-grid{grid-template-columns:1fr}
       .feature-band .shell,.latest-card{display:block}
       .feature-band .primary{margin-top:26px}
       .demo{grid-template-columns:1fr}
@@ -229,6 +268,14 @@
       .section{padding:76px 0}
       h2{font-size:42px}
       .module{border-radius:24px;padding:22px}
+      .asset-card{min-height:390px;border-radius:34px;padding:30px 24px}
+      .asset-card p{font-size:17px}
+      .asset-stage{left:12px;right:12px;height:230px}
+      .message-tile{width:300px}
+      .triage-stack{left:2%;right:2%}
+      .orb{width:280px;height:280px}
+      .language-cloud{width:300px;font-size:22px}
+      .wire-globe{width:260px;height:260px}
       .demo .ig-post,.demo .ig-phone{border-radius:24px}
       .feature-band{padding:64px 0}
       table{display:block;overflow-x:auto}
@@ -428,6 +475,56 @@
       </div>
     </section>
 
+    <section class="section" data-od-id="movable-feature-assets">
+      <div class="shell">
+        <span class="eyebrow">Movable assets</span>
+        <div class="movable-grid" data-od-id="movable-asset-board">
+          <article class="asset-card slate" data-od-id="asset-stay-ahead">
+            <h3>Stay ahead of every DM</h3>
+            <p>"How much?", "Can I book?" messages get lost. Every hour of delay costs you a conversion.</p>
+            <div class="asset-stage" aria-label="Movable message examples">
+              <div class="drag-asset message-tile" data-asset-id="message-mike" tabindex="0" aria-label="Move message from mike" style="--x:17%;--y:0%;--r:-4deg"><img src="../assets/figma-feature/jenny-dp.webp" width="1200" height="1200" alt=""><span><strong>[mike.studio]</strong><span>How much for a custom?</span></span></div>
+              <div class="drag-asset message-tile" data-asset-id="message-luna" tabindex="0" aria-label="Move message from luna crafts" style="--x:22%;--y:29%;--r:3deg"><img src="../assets/figma-feature/jenny-dp.webp" width="1200" height="1200" alt=""><span><strong>[luna_crafts]</strong><span>Do you ship worldwide?</span></span></div>
+              <div class="drag-asset message-tile" data-asset-id="message-ryan" tabindex="0" aria-label="Move message from ryan photo" style="--x:13%;--y:62%;--r:-3deg"><img src="../assets/figma-feature/jenny-dp.webp" width="1200" height="1200" alt=""><span><strong>[ryan.photo]</strong><span>Collab opportunity?</span></span></div>
+            </div>
+          </article>
+
+          <article class="asset-card olive" data-od-id="asset-triage">
+            <h3>An inbox that triages itself</h3>
+            <p>Answers pulled from your FAQs are marked read. Anything beyond them stays unread for you.</p>
+            <div class="asset-stage" aria-label="Movable inbox triage examples">
+              <div class="orbit-lines"></div>
+              <span class="drag-asset orbit-dot peach" data-asset-id="orbit-dot-one" tabindex="0" aria-label="Move orbit dot" style="--x:18%;--y:25%"></span>
+              <span class="drag-asset orbit-dot" data-asset-id="orbit-dot-two" tabindex="0" aria-label="Move orbit dot" style="--x:70%;--y:18%"></span>
+              <div class="triage-stack">
+                <div class="drag-asset triage-card" data-asset-id="triage-card-one" tabindex="0" aria-label="Move triage card" style="--x:10%;--y:10%;--r:-2deg"><div class="triage-row"><img src="../assets/figma-feature/jenny-dp.webp" width="1200" height="1200" alt=""><strong>[luna_crafts]</strong><span class="status-pill">Resolved</span></div></div>
+                <div class="drag-asset triage-card" data-asset-id="triage-card-two" tabindex="0" aria-label="Move triage card" style="--x:2%;--y:42%;--r:0deg"><div class="triage-row"><img src="../assets/figma-feature/jenny-dp.webp" width="1200" height="1200" alt=""><strong>[luna_crafts]</strong><span class="status-pill">Needs Attention</span></div><span class="sentiment">Detected negative sentiment</span></div>
+              </div>
+            </div>
+          </article>
+
+          <article class="asset-card maroon" data-od-id="asset-human-replies">
+            <h3>Replies that still sound like you</h3>
+            <p>Helpful, on-brand responses that feel human, not like a canned template.</p>
+            <div class="asset-stage" aria-label="Movable reply style example">
+              <div class="drag-asset orb" data-asset-id="reply-orb" tabindex="0" aria-label="Move reply orb" style="--x:22%;--y:18%"></div>
+            </div>
+          </article>
+
+          <article class="asset-card green" data-od-id="asset-language">
+            <h3>Speak every follower’s language</h3>
+            <p>Answer in the language they write in, and make every fan feel understood.</p>
+            <div class="asset-stage" aria-label="Movable language examples">
+              <div class="drag-asset language-cloud" data-asset-id="language-cloud" tabindex="0" aria-label="Move language words" style="--x:4%;--y:44%">
+                <span>שלום</span><span>नमस्कार</span><span>Bonjour</span><span>Ciao</span><span>Ahoj</span><span>Γειά σου</span><span>你好</span>
+              </div>
+              <div class="drag-asset wire-globe" data-asset-id="wire-globe" tabindex="0" aria-label="Move language globe" style="--x:58%;--y:20%"></div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
     <section class="feature-band" data-od-id="cta-two">
       <div class="shell">
         <div><p class="band-title">Make every comment, story reply, and keyword easier to answer.</p><p>Use one workspace for Instagram automations, AI FAQ, Link in Bio, and growth analytics.</p></div>
@@ -554,5 +651,63 @@
       <div class="legal" data-od-id="legal-footer"><span>Zorcha Software Pvt Ltd</span><span>© 2026 Zorcha Software Pvt Ltd All rights reserved</span><span>Privacy Policy · Terms of Service · Cookie Statement</span></div>
     </div>
   </footer>
+  <script>
+    (() => {
+      const storageKey = 'zorcha-free-dm-movable-assets';
+      let saved = {};
+      try { saved = JSON.parse(localStorage.getItem(storageKey) || '{}'); } catch {}
+      const persist = () => localStorage.setItem(storageKey, JSON.stringify(saved));
+
+      document.querySelectorAll('.drag-asset').forEach((asset) => {
+        const id = asset.dataset.assetId;
+        asset.setAttribute('role', 'button');
+        asset.setAttribute('aria-roledescription', 'movable asset');
+        let dx = saved[id]?.x || 0;
+        let dy = saved[id]?.y || 0;
+        const clamp = () => {
+          dx = Math.max(-140, Math.min(140, dx));
+          dy = Math.max(-110, Math.min(110, dy));
+        };
+        const apply = () => {
+          clamp();
+          asset.style.setProperty('--dx', `${dx}px`);
+          asset.style.setProperty('--dy', `${dy}px`);
+          saved[id] = { x: dx, y: dy };
+        };
+        apply();
+
+        let startX = 0;
+        let startY = 0;
+        let baseX = 0;
+        let baseY = 0;
+        asset.addEventListener('pointerdown', (event) => {
+          asset.setPointerCapture(event.pointerId);
+          startX = event.clientX;
+          startY = event.clientY;
+          baseX = dx;
+          baseY = dy;
+        });
+        asset.addEventListener('pointermove', (event) => {
+          if (!asset.hasPointerCapture(event.pointerId)) return;
+          dx = baseX + event.clientX - startX;
+          dy = baseY + event.clientY - startY;
+          apply();
+        });
+        asset.addEventListener('pointerup', persist);
+        asset.addEventListener('pointercancel', persist);
+        asset.addEventListener('keydown', (event) => {
+          const step = event.shiftKey ? 24 : 8;
+          if (event.key === 'ArrowLeft') dx -= step;
+          else if (event.key === 'ArrowRight') dx += step;
+          else if (event.key === 'ArrowUp') dy -= step;
+          else if (event.key === 'ArrowDown') dy += step;
+          else return;
+          event.preventDefault();
+          apply();
+          persist();
+        });
+      });
+    })();
+  </script>
 </body>
 </html>

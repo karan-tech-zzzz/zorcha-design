@@ -19,6 +19,7 @@ Local absolute paths are documentation of extraction provenance only. This repos
 
 - `tokens/marketing.css` mirrors `zorcha-website/app/app.css` root colors, Plus Jakarta Sans, and the locally captured Degular Display files.
 - `tokens/marketing.css` also contains the feature-page component contract from `feture_pages.fig`: glass navbar dimensions, logo colors, section radii, hero glass surfaces, Instagram DM module colors, and CTA geometry.
+- Movable feature asset-board colors and shapes come from the imported AI FAQ-style Figma cards: stacked DM tiles, inbox triage cards, orbit dots, language chips, and dark rounded benefit panels.
 - `tokens/product.css` mirrors `zorcha-frontend/app/app.css`, including default, dark, semantic, and chart tokens.
 - `tokens/foundation.css` contains only shared scale and type aliases observed across both codebases.
 

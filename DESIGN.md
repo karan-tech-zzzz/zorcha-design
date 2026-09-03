@@ -28,6 +28,7 @@ Choose the surface before layout. Do not combine their tokens casually.
 - Purple is the action/energy signal; use it for the primary action, progress, or one decisive visual device.
 - Alternate editorial text fields with real imagery or product demonstrations; avoid repetitive feature-card grids.
 - SEO feature sections must stay scannable: one short answer, then cards, chips, stats, tables, screenshots, or accordions instead of continuous article paragraphs.
+- Feature benefit boards can use movable internal assets from Figma: stacked DM tiles, inbox triage cards, orbit dots, language chips, and sphere/globe visuals inside large rounded dark panels.
 - Large feature sections use 42–55px chapter radii; internal modules use 24–32px; nav CTA uses 11px; do not flatten these to a global radius.
 - Motion should explain progression: sticky sequences, controlled transforms, and carousel movement—not ambient decoration.
 
