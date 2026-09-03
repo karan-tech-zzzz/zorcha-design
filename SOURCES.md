@@ -10,7 +10,7 @@
 | `figma/thumbnail.png` from `feture_pages.fig` | Visual ground truth for feature-page composition |
 | `/Users/home/Projects/z/zorcha-website` | Marketing production implementation |
 | `/Users/home/Projects/z/zorcha-frontend` | Dashboard/product production implementation |
-| `https://zorcha.com/pricing/` | Current free-plan language and public plan positioning |
+| `https://zorcha.com/pricing/` | General navigation/source context only; not a required content module for free comment-to-DM pages |
 | `https://zorcha.com/meta-verified/` | Meta Tech Provider and official API messaging |
 
 Local absolute paths are documentation of extraction provenance only. This repository does not depend on them at runtime.
@@ -48,5 +48,5 @@ The parent OpenDesign project was optimized in place on 2026-09-03. The canonica
 - Uses Instagram-native post, story, and DM reference modules for comment-to-DM and reply demonstrations.
 - Uses localized Custom Flow Builder screenshots for the hero background so the page does not reuse the Link in Bio/editor visual world.
 - Uses actual localized Zorcha screenshots from `assets/product/`.
-- Uses public pricing language for Free plan positioning, including unlimited DMs, unlimited contacts, 20 FAQs, and upgrade-only advanced features.
+- Keeps the page focused on the free comment-to-DM workflow. Pricing and plan-comparison modules are intentionally out of scope unless the brief explicitly asks for them.
 - Uses Zorcha's Meta Tech Provider page plus existing Comment to DM FAQ copy for safety and API messaging.

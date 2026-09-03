@@ -14,7 +14,8 @@
 - Keep the same feature-page visual language as product pages: large Degular hero, off-white content field, real product screenshots, Instagram-native DM/comment/story references, and rounded proof modules.
 - Avoid continuous article copy. Each H2 section should resolve into a short module, visual proof, chips, stats, a table, or an accordion. Use paragraphs only as brief support copy.
 - Place a clear CTA after every two or three content sections, varying CTA copy by context.
-- Include a comparison table only when it helps the query; keep claims sourced to pricing, help, or production copy.
+- Include a comparison table only when the query is explicitly about alternatives, pricing, or plan choice; keep claims sourced to pricing, help, or production copy.
+- Free comment-to-DM pages are workflow pages, not plan-pitch pages. Keep them centered on the public comment trigger, keyword match, private DM, setup proof, safety, and FAQ.
 - Keep FAQ content practical and direct. Avoid keyword-stuffed repetition.
 
 ## Component contracts

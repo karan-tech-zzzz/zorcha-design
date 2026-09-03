@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Free Unlimited Instagram DM Automation — Zorcha</title>
-  <meta name="description" content="Zorcha lets creators automate unlimited Instagram DMs, automations, and contacts on its free plan. Learn how comments, story replies, and keywords become automated Instagram conversations.">
+  <title>Free Comment to DM Automation — Zorcha</title>
+  <meta name="description" content="Zorcha lets creators turn Instagram comments on posts and reels into free automated DMs. See how comment keywords become private Instagram conversations.">
   <link rel="canonical" href="/free-instagram-dm-automation/">
   <link rel="stylesheet" href="../tokens/foundation.css">
   <link rel="stylesheet" href="../tokens/marketing.css">
@@ -93,7 +93,7 @@
     .hero-chat-top{display:flex;align-items:center;justify-content:space-between;gap:18px}
     .hero-chat-profile{display:flex;align-items:center;gap:10px;font-size:12px;font-weight:900}
     .creator-avatar{width:26px;height:26px;border-radius:50%;object-fit:cover}
-    .ig-top .creator-avatar,.ig-dm-top .creator-avatar,.ig-story-top .creator-avatar{width:34px;height:34px}
+    .ig-top .creator-avatar,.ig-dm-top .creator-avatar{width:34px;height:34px}
     .hero-chat-actions{display:flex;gap:14px;font-size:18px;font-weight:900}
     .hero-thread{margin-top:42px;display:flex;flex-direction:column;gap:22px;overflow:hidden}
     .hero-msg{display:flex;align-items:flex-start;gap:12px}
@@ -103,7 +103,7 @@
     .hero-composer{position:absolute;left:24px;right:24px;bottom:276px;min-height:48px;border:1px solid var(--figma-nav-border);border-radius:999px;background:var(--figma-deep);display:flex;align-items:center;justify-content:space-between;padding:5px 12px 5px 5px;color:var(--figma-surface-glass);font-size:11px;font-weight:800}
     .composer-camera{width:36px;height:36px;border-radius:50%;background:var(--figma-purple);display:grid;place-items:center;color:var(--figma-white);font-size:15px}
     .composer-icons{display:flex;gap:10px;color:var(--figma-muted);font-size:15px}
-    .ig-post,.ig-phone,.ig-story{height:100%;border-radius:30px;background:var(--figma-surface-ice);color:var(--figma-ink);overflow:hidden;box-shadow:0 1px 0 var(--figma-line-soft)}
+    .ig-post,.ig-phone{height:100%;border-radius:30px;background:var(--figma-surface-ice);color:var(--figma-ink);overflow:hidden;box-shadow:0 1px 0 var(--figma-line-soft)}
     .ig-post{display:flex;flex-direction:column}
     .ig-top,.ig-dm-top{min-height:58px;display:flex;align-items:center;gap:11px;padding:0 16px;border-bottom:1px solid var(--figma-nav-border)}
     .ig-name{display:grid;gap:2px;font-size:13px;font-weight:900;line-height:1.15}
@@ -124,14 +124,6 @@
     .ig-bubble{max-width:82%;padding:10px 13px;border-radius:18px;background:var(--figma-nav-border);color:var(--figma-ink);font-size:13px;line-height:1.38;font-weight:700}
     .ig-bubble.out{align-self:flex-end;background:var(--figma-purple);color:var(--figma-white)}
     .ig-input{min-height:42px;margin-top:auto;border:1px solid var(--figma-nav-border);border-radius:999px;display:flex;align-items:center;justify-content:space-between;padding:0 12px;color:var(--figma-soft-muted);font-size:12px;font-weight:800}
-    .ig-story{position:relative;min-height:380px;background:var(--figma-deep);color:var(--figma-white);padding:14px;display:flex;flex-direction:column;justify-content:space-between}
-    .ig-story:before{content:"";position:absolute;inset:14px;border-radius:24px;background:linear-gradient(145deg,var(--figma-purple),var(--figma-green));opacity:.82}
-    .ig-story > *{position:relative;z-index:1}
-    .ig-bars{display:grid;grid-template-columns:repeat(3,1fr);gap:5px}
-    .ig-bars span{height:3px;border-radius:999px;background:var(--figma-surface-glass)}
-    .ig-story-top{display:flex;align-items:center;gap:10px;margin-top:12px;font-size:12px;font-weight:900}
-    .ig-story-question{margin:auto 0 18px;padding:18px;border-radius:22px;background:var(--figma-surface-glass);backdrop-filter:blur(14px);color:var(--figma-ink);font-size:24px;line-height:1.05;font-family:var(--figma-font-display);font-weight:900}
-    .ig-story-reply{min-height:48px;border:1px solid var(--figma-surface-glass);border-radius:999px;padding:0 16px;display:flex;align-items:center;justify-content:space-between;background:var(--figma-deep-glass);font-size:13px;font-weight:800}
     .section{padding:116px 0}
     .split{display:grid;grid-template-columns:minmax(260px,.42fr) minmax(0,1fr);gap:78px;align-items:start}
     .eyebrow{display:block;margin-bottom:20px;color:var(--figma-purple);font-size:13px;font-weight:900;letter-spacing:.12em;text-transform:uppercase}
@@ -186,9 +178,6 @@
     .step-card{min-height:190px;border-radius:24px;background:var(--figma-surface);padding:20px;box-shadow:0 1px 0 var(--figma-line-soft)}
     .step-card b{display:block;color:var(--figma-purple);font-size:30px;line-height:1;margin-bottom:46px}
     .step-card span{color:var(--figma-muted);font-size:14px;line-height:1.45}
-    .compare-strip{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
-    .compare-chip{border-radius:22px;background:var(--figma-surface);padding:20px;color:var(--figma-ink);font-weight:900}
-    .compare-chip span{display:block;margin-top:8px;color:var(--figma-muted);font-size:14px;line-height:1.4;font-weight:700}
     .movable-grid{display:grid;grid-template-columns:1fr 1fr;gap:32px}
     .asset-card{position:relative;min-height:430px;border-radius:55px;padding:40px 38px;overflow:hidden;color:var(--figma-white);touch-action:pan-y}
     .asset-card h3{max-width:520px;color:var(--figma-white);font-size:28px;line-height:1.1}
@@ -259,7 +248,7 @@
       .product-shot.panel{display:none}
       .hero-inner{padding-top:128px}
       .hero-stage{margin-top:58px}
-      .split,.module-grid,.screens,.stat-row,.pattern-grid,.keyword-grid,.safety-panel,.setup-grid,.compare-strip,.movable-grid{grid-template-columns:1fr}
+      .split,.module-grid,.screens,.stat-row,.pattern-grid,.keyword-grid,.safety-panel,.setup-grid,.movable-grid{grid-template-columns:1fr}
       .feature-band .shell,.latest-card{display:block}
       .feature-band .primary{margin-top:26px}
       .demo{grid-template-columns:1fr}
@@ -324,11 +313,11 @@
       </div>
       <div class="hero-inner shell">
         <img class="meta-badge" src="../assets/figma-feature/meta-tech-provider.webp" width="550" height="240" alt="Meta Verified Tech Provider badge">
-        <h1 data-od-id="hero-heading">Free Unlimited Instagram DM Automation</h1>
-        <p class="short-answer" data-od-id="short-answer">Zorcha lets creators automate unlimited Instagram DMs, automations and contacts on its free plan.</p>
+        <h1 data-od-id="hero-heading">Free Comment to DM Automation</h1>
+        <p class="short-answer" data-od-id="short-answer">Zorcha lets creators turn Instagram comments on posts and reels into free automated DMs.</p>
         <div class="hero-actions" data-od-id="hero-actions">
           <a class="primary" href="/signup/" data-od-id="hero-primary-cta">Start for Free</a>
-          <a class="secondary" href="/pricing/" data-od-id="hero-secondary-cta">See Pricing</a>
+          <a class="secondary" href="#comment-to-dm" data-od-id="hero-secondary-cta">View Demo</a>
         </div>
       </div>
       <div class="hero-stage" aria-label="Instagram DM automation demonstration" data-od-id="hero-product-mockups">
@@ -361,31 +350,31 @@
       <div class="shell split">
         <div><span class="eyebrow">DM Automation</span><h2>What Is Instagram DM Automation?</h2></div>
         <div class="pattern-grid" data-od-id="automation-pattern">
-          <article class="pattern-card" data-od-id="pattern-trigger"><b>01</b><h3>Trigger</h3><span>Comment, story reply, or keyword DM.</span></article>
+          <article class="pattern-card" data-od-id="pattern-trigger"><b>01</b><h3>Trigger</h3><span>A post or reel comment matches your keyword.</span></article>
           <article class="pattern-card" data-od-id="pattern-reply"><b>02</b><h3>Reply</h3><span>Zorcha sends the right private message.</span></article>
           <article class="pattern-card" data-od-id="pattern-convert"><b>03</b><h3>Convert</h3><span>Share a link, guide, offer, FAQ, or next step.</span></article>
         </div>
       </div>
     </section>
 
-    <section class="section" data-od-id="free-plan-included">
+    <section class="section" data-od-id="free-comment-dm-included">
       <div class="shell split">
-        <div><span class="eyebrow">Free plan</span><h2>What Is Included in Zorcha’s Free Plan?</h2></div>
+        <div><span class="eyebrow">Free comment flow</span><h2>What You Can Launch for Free</h2></div>
         <div class="module-grid">
-          <article class="module" data-od-id="free-plan-limits">
-            <h3>Free-plan limits</h3>
-            <div class="limit-row"><strong>Automations</strong><span>Unlimited on current Zorcha page</span></div>
-            <div class="limit-row"><strong>DMs</strong><span>Unlimited DMs</span></div>
-            <div class="limit-row"><strong>Contacts</strong><span>Unlimited contacts and exports</span></div>
-            <div class="limit-row"><strong>AI FAQ</strong><span>20 FAQs and 15K AI credits</span></div>
+          <article class="module" data-od-id="free-comment-dm-limits">
+            <h3>Comment-to-DM core</h3>
+            <div class="limit-row"><strong>Trigger</strong><span>Comments on posts or reels</span></div>
+            <div class="limit-row"><strong>Keyword</strong><span>Guide, price, link, book, or custom words</span></div>
+            <div class="limit-row"><strong>Reply</strong><span>Send the opening private DM automatically</span></div>
+            <div class="limit-row"><strong>Contacts</strong><span>Save interested followers in Zorcha</span></div>
           </article>
-          <article class="module dark" data-od-id="free-plan-exclusions">
-            <h3>Upgrade when you need more control</h3>
-            <div class="mini-checks" aria-label="Paid plan exclusions">
-              <span>Personalised DMs</span>
-              <span>DM variations</span>
-              <span>Advanced multi-message flows</span>
-              <span>Higher AI limits</span>
+          <article class="module dark" data-od-id="free-comment-dm-setup">
+            <h3>Built for the first public comment</h3>
+            <div class="mini-checks" aria-label="Comment to DM setup pieces">
+              <span>Choose the Instagram post or reel</span>
+              <span>Set the public comment keyword</span>
+              <span>Write the private DM reply</span>
+              <span>Launch and watch replies come in</span>
             </div>
           </article>
         </div>
@@ -394,12 +383,12 @@
 
     <section class="feature-band" data-od-id="cta-one">
       <div class="shell">
-        <div><p class="band-title">Build your first automation without rebuilding your funnel.</p><p>Start with comments and keywords, then connect story replies and AI FAQ as your audience grows.</p></div>
+        <div><p class="band-title">Build your first comment-to-DM flow without rebuilding your funnel.</p><p>Start with one reel, one keyword, and one useful private reply.</p></div>
         <a class="primary" href="/signup/" data-od-id="cta-one-button">Start for Free</a>
       </div>
     </section>
 
-    <section class="section cream" data-od-id="comment-to-dm">
+    <section class="section cream" id="comment-to-dm" data-od-id="comment-to-dm">
       <div class="shell split">
         <div><span class="eyebrow">Comment trigger</span><h2>Automate DMs From Instagram Comments</h2></div>
         <div class="copy">
@@ -446,45 +435,44 @@
       </div>
     </section>
 
-    <section class="section" data-od-id="story-and-keywords">
+    <section class="section" id="comment-keywords" data-od-id="comment-keywords">
       <div class="shell split">
-        <div><span class="eyebrow">Inbox triggers</span><h2>Automate Instagram Story Replies</h2></div>
+        <div><span class="eyebrow">Comment keywords</span><h2>Match the Comments That Signal Interest</h2></div>
         <div class="module-grid">
-          <article class="module" data-od-id="story-replies-card">
-            <div class="ig-story" aria-label="Instagram story reply trigger">
-              <div>
-                <div class="ig-bars"><span></span><span></span><span></span></div>
-                <div class="ig-story-top"><img class="creator-avatar" src="../assets/figma-feature/jenny-dp.webp" width="1200" height="1200" alt="Creator profile"><strong>yourbrand</strong></div>
-              </div>
-              <div class="ig-story-question">Reply LINK to get early access</div>
-              <div class="ig-story-reply"><span>Send message</span><strong>LINK</strong></div>
+          <article class="module" data-od-id="comment-keyword-card">
+            <h3>One reel, one clear prompt</h3>
+            <div class="mini-checks" aria-label="Comment keyword examples">
+              <span>Comment GUIDE for the checklist</span>
+              <span>Comment PRICE for the menu</span>
+              <span>Comment BOOK for the link</span>
+              <span>Comment DROP for early access</span>
             </div>
+            <span class="keyword">Trigger: reel comment</span>
           </article>
-          <article class="module" data-od-id="story-use-cases-card">
-            <h3>Story replies</h3>
-            <div class="mini-checks" aria-label="Story reply use cases">
-              <span>Drops</span>
-              <span>Webinars</span>
-              <span>Limited offers</span>
-              <span>Creator resources</span>
+          <article class="module dark" data-od-id="comment-routing-card">
+            <h3>Keep the public thread clean</h3>
+            <div class="mini-checks" aria-label="Comment to DM routing">
+              <span>Follower comments publicly</span>
+              <span>Zorcha detects the keyword</span>
+              <span>Private DM opens with context</span>
+              <span>Contact is saved for follow-up</span>
             </div>
-            <span class="keyword">Trigger: story reply</span>
           </article>
         </div>
       </div>
     </section>
 
-    <section class="section cream" data-od-id="keyword-replies">
+    <section class="section cream" id="flow-builder" data-od-id="flow-builder">
       <div class="shell split">
-        <div><span class="eyebrow">Keyword trigger</span><h2>Automatically Reply to DM Keywords</h2></div>
+        <div><span class="eyebrow">Flow builder</span><h2>Build the Comment Path Once</h2></div>
         <div class="copy">
           <div class="keyword-grid" data-od-id="keyword-examples">
             <span>price</span><span>guide</span><span>book</span><span>link</span>
           </div>
           <div class="screens" data-od-id="actual-zorcha-screenshots">
-            <article class="screen" data-od-id="screenshot-automation"><img src="../assets/product/get-started-automation.webp" width="1200" height="1667" alt="Zorcha automation setup screenshot"><strong>Automation setup</strong><span>Create a trigger and launch the first DM workflow.</span></article>
-            <article class="screen" data-od-id="screenshot-ai-faq"><img src="../assets/product/get-started-ai-faq.webp" width="1200" height="1667" alt="Zorcha AI FAQ setup screenshot"><strong>AI FAQ</strong><span>Answer repeated questions from the same workspace.</span></article>
-            <article class="screen" data-od-id="screenshot-free-plan"><img src="../assets/product/free-plan.webp" width="256" height="246" alt="Zorcha free plan dashboard screenshot"><strong>Free plan</strong><span>Keep DM volume and contacts unlimited on the free plan.</span></article>
+            <article class="screen" data-od-id="screenshot-flow-trigger"><img src="../assets/figma-feature/flow-builder-step-1.webp" width="1200" height="782" alt="Zorcha flow builder comment trigger screenshot"><strong>Pick the comment event</strong><span>Start from the post or reel comment that should open a DM.</span></article>
+            <article class="screen" data-od-id="screenshot-flow-logic"><img src="../assets/figma-feature/flow-builder-step-3.webp" width="1200" height="875" alt="Zorcha flow builder automation path screenshot"><strong>Route the reply</strong><span>Connect the keyword to the exact private message and next step.</span></article>
+            <article class="screen" data-od-id="screenshot-flow-editor"><img src="../assets/figma-feature/flow-builder-step-2.webp" width="1200" height="1675" alt="Zorcha flow builder editor screenshot"><strong>Publish the flow</strong><span>Launch the automation, then watch the conversation continue in DMs.</span></article>
           </div>
         </div>
       </div>
@@ -542,12 +530,12 @@
 
     <section class="feature-band" data-od-id="cta-two">
       <div class="shell">
-        <div><p class="band-title">Make every comment, story reply, and keyword easier to answer.</p><p>Use one workspace for Instagram automations, AI FAQ, Link in Bio, and growth analytics.</p></div>
-        <a class="primary" href="/pricing/" data-od-id="cta-two-button">Compare Plans</a>
+        <div><p class="band-title">Send the right DM from the next comment keyword.</p><p>Use the flow builder to turn public interest into a private conversation.</p></div>
+        <a class="primary" href="/signup/" data-od-id="cta-two-button">Create Comment Flow</a>
       </div>
     </section>
 
-    <section class="section" data-od-id="safety">
+    <section class="section" id="safety" data-od-id="safety">
       <div class="shell split">
         <div><span class="eyebrow">Safety</span><h2>Is Instagram DM Automation Safe?</h2></div>
         <div class="copy">
@@ -573,39 +561,15 @@
       </div>
     </section>
 
-    <section class="section cream" data-od-id="setup">
+    <section class="section cream" id="setup" data-od-id="setup">
       <div class="shell split">
         <div><span class="eyebrow">Setup</span><h2>How to Set Up Your First Automation</h2></div>
         <div class="setup-grid" data-od-id="setup-steps">
           <article class="step-card"><b>1</b><h3>Connect</h3><span>Link Instagram.</span></article>
-          <article class="step-card"><b>2</b><h3>Trigger</h3><span>Pick comment, story, or keyword.</span></article>
-          <article class="step-card"><b>3</b><h3>Write</h3><span>Add the first DM.</span></article>
+          <article class="step-card"><b>2</b><h3>Trigger</h3><span>Select post or reel comments.</span></article>
+          <article class="step-card"><b>3</b><h3>Write</h3><span>Add the private DM.</span></article>
           <article class="step-card"><b>4</b><h3>Publish</h3><span>Turn the flow on.</span></article>
-          <article class="step-card"><b>5</b><h3>Track</h3><span>Review replies and growth.</span></article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section" data-od-id="comparison">
-      <div class="shell split">
-        <div><span class="eyebrow">Comparison</span><h2>Zorcha Free vs Other Free DM Automation Tools</h2></div>
-        <div class="copy">
-          <div class="compare-strip" data-od-id="comparison-summary">
-            <div class="compare-chip">Instagram-first<span>Built around comments, stories, DMs, and creator growth.</span></div>
-            <div class="compare-chip">Free core loop<span>Unlimited DMs, automations, and contacts on the free plan.</span></div>
-            <div class="compare-chip">API-backed<span>Meta Tech Provider information supports safety claims.</span></div>
-          </div>
-          <table data-od-id="comparison-table">
-            <thead><tr><th>Capability</th><th>Zorcha Free</th><th>Typical free DM tool</th></tr></thead>
-            <tbody>
-              <tr><td>Instagram focus</td><td>Built around Instagram automations.</td><td>Often part of a broader chatbot tool.</td></tr>
-              <tr><td>DM volume</td><td>Unlimited DMs.</td><td>May cap sends, conversations, or subscribers.</td></tr>
-              <tr><td>Contacts</td><td>Unlimited contacts and exports.</td><td>Often limited by audience size.</td></tr>
-              <tr><td>Comment to DM</td><td>Included for posts and reels.</td><td>Advanced rules may require a paid plan.</td></tr>
-              <tr><td>AI FAQ</td><td>20 FAQs and starter AI credits.</td><td>Often paid or unavailable.</td></tr>
-              <tr><td>Meta APIs</td><td>Meta Tech Provider information and official API positioning.</td><td>Varies by provider.</td></tr>
-            </tbody>
-          </table>
+          <article class="step-card"><b>5</b><h3>Track</h3><span>Review comment leads.</span></article>
         </div>
       </div>
     </section>
@@ -617,14 +581,14 @@
       </div>
     </section>
 
-    <section class="section cream" data-od-id="faq">
+    <section class="section cream" id="faq" data-od-id="faq">
       <div class="shell split">
         <div><span class="eyebrow">FAQs</span><h2>Frequently Asked Questions</h2></div>
         <div class="faq-list">
-          <details data-od-id="faq-free" open><summary>Is Zorcha really free for Instagram DM automation?</summary><p>Yes. Zorcha’s current public positioning includes free Instagram DM automation with unlimited DMs and contacts. Advanced controls sit in paid plans.</p></details>
+          <details data-od-id="faq-free" open><summary>Is Zorcha really free for comment-to-DM automation?</summary><p>Yes. This page is focused on the free comment-to-DM loop: comments on posts or reels become private Instagram DMs through Zorcha.</p></details>
           <details data-od-id="faq-account"><summary>Do I need a Business or Creator Instagram account?</summary><p>Yes. Comment-to-DM automation uses Meta’s official Instagram API, which requires an Instagram professional account connection.</p></details>
           <details data-od-id="faq-comments"><summary>Can Zorcha send a DM when someone comments on a reel?</summary><p>Yes. Zorcha supports comment-to-DM flows for posts and reels, so creators can turn comments into private conversations.</p></details>
-          <details data-od-id="faq-stories"><summary>Can I automate story replies?</summary><p>Yes. Story replies can be routed into useful automated responses depending on the trigger and account permissions.</p></details>
+          <details data-od-id="faq-keywords"><summary>Can I require a specific comment keyword?</summary><p>Yes. You can ask followers to comment a word such as GUIDE, PRICE, BOOK, or LINK, then send the matching DM automatically.</p></details>
           <details data-od-id="faq-safe"><summary>Will automation get my account banned?</summary><p>No tool can bypass Meta rules. Zorcha’s safety position is to use official APIs and help creators stay inside Meta’s requirements, while creators avoid spam-like behavior.</p></details>
         </div>
       </div>
@@ -660,7 +624,7 @@
       <div class="footer-grid" data-od-id="footer-links">
         <section><h3>Company</h3><a href="/about/">About</a><a href="/whats-new/">What’s New</a><a href="/pricing/">Pricing</a><a href="/press/">Press</a><a href="/legal/">Legal</a><a href="/contact/">Contact Us</a></section>
         <section><h3>Product</h3><a href="/scheduler/">Scheduler</a><a href="/products/link-in-bio/">Link in Bio</a><a href="/free-instagram-dm-automation/">DM Automation</a><a href="/products/forms/">Forms</a><a href="/brand-collabs/">Brand Collabs</a><a href="/digital-products/">Digital Products</a></section>
-        <section><h3>Compare</h3><a href="/compare/manychat/">vs Manychat</a><a href="/compare/linkdm/">vs LinkDM</a><a href="/compare/linktree/">vs Linktree</a><a href="/compare/inro/">vs Inro</a><a href="/compare/superprofile/">vs Superprofile</a><a href="/compare/topmate/">vs Topmate</a></section>
+        <section><h3>Automations</h3><a href="#comment-to-dm">Comment to DM</a><a href="#comment-keywords">Keyword Rules</a><a href="#flow-builder">Flow Builder</a><a href="#safety">Safety</a><a href="#setup">Setup</a><a href="#faq">FAQs</a></section>
         <section><h3>Resources</h3><a href="/partners/">Become a Partner</a><a href="/blog/">The Zorcha Blog</a><a href="/support/">Help &amp; Support</a><a href="/faqs/">FAQs</a><a href="/features/">Features &amp; How-Tos</a><a href="/report/">Report a Violation</a></section>
       </div>
       <div class="legal" data-od-id="legal-footer"><span>Zorcha Software Pvt Ltd</span><span>© 2026 Zorcha Software Pvt Ltd All rights reserved</span><span>Privacy Policy · Terms of Service · Cookie Statement</span></div>

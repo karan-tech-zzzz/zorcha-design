@@ -35,7 +35,8 @@ tokens/       Shared, marketing, and product token contracts
 - Use real product language and honest empty states. Do not invent customer metrics.
 - Preserve 44px minimum controls and visible `:focus-visible` states.
 - New reusable rules must be evidenced in Figma or a production Zorcha codebase.
-- SEO pages should keep the production feature-page rhythm: large product hero, answer-led body sections, real screenshots, comparison proof, FAQs, and repeated CTAs after every few sections.
+- SEO pages should keep the production feature-page rhythm: large product hero, answer-led body sections, real screenshots, practical proof, FAQs, and repeated CTAs after every few sections.
+- Free comment-to-DM pages are not pricing pages. Do not pitch plan comparisons there unless the brief explicitly asks for pricing or alternatives.
 - Feature-page visuals should match the Figma/website component language: glass navbar, purple mark, navy wordmark, Instagram-like UI references, short modular sections, and movable feature assets where appropriate.
 - DM automation pages should use Flow Builder and Instagram DM references, not Link in Bio/editor backgrounds.
 
