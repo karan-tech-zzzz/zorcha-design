@@ -35,6 +35,7 @@ When adding an asset, append its original source and intended usage here.
 `examples/free-instagram-dm-automation.html` records the page model for `/free-instagram-dm-automation/`:
 
 - Uses Figma feature-page tokens and the section rhythm observed in `/products/link-in-bio/` and `/products/ai-faq/`.
+- Uses Instagram-native post, story, and DM reference modules for comment-to-DM and reply demonstrations.
 - Uses actual localized Zorcha screenshots from `assets/product/`.
 - Uses public pricing language for Free plan positioning, including unlimited DMs, unlimited contacts, 20 FAQs, and upgrade-only advanced features.
 - Uses Zorcha's Meta Tech Provider page plus existing Comment to DM FAQ copy for safety and API messaging.

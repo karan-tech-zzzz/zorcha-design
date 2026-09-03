@@ -22,10 +22,12 @@
       --figma-purple:#720e8b;
       --figma-purple-soft:#e8bfe9;
       --figma-green:#90fab0;
-      --figma-success:#b8e874;
-      --figma-warning:#e8a474;
       --figma-deep:#0c0c0c;
       --figma-deep-glass:#0d111280;
+      --figma-cream-glass:#faf9f64d;
+      --figma-line-soft:#e8e8e826;
+      --figma-surface-ice:#f8ffff;
+      --figma-metal:#d9d9d9;
       --figma-radius-nav:55px;
       --figma-radius-card:32px;
       --figma-radius-module:24px;
@@ -59,19 +61,45 @@
     .secondary{padding:0 22px;border:1px solid var(--figma-white);background:var(--figma-surface-glass);color:var(--figma-white);backdrop-filter:blur(16px)}
     .secondary:hover{background:var(--figma-white);color:var(--figma-ink)}
     .hero-stage{position:relative;z-index:2;width:min(1180px,calc(100% - 32px));margin:112px auto 0;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px;align-items:end}
-    .mock-card{min-height:412px;border:1px solid #ffffff40;border-radius:42px;background:#ffffff17;backdrop-filter:blur(22px);padding:16px;box-shadow:0 34px 90px #00000042}
+    .mock-card{min-height:412px;border:1px solid var(--figma-cream-glass);border-radius:42px;background:var(--figma-deep-glass);backdrop-filter:blur(22px);padding:16px;box-shadow:0 34px 90px var(--figma-deep-glass)}
     .mock-card:nth-child(2){transform:translateY(54px)}
-    .phone-panel{height:100%;border-radius:30px;background:var(--figma-deep);padding:22px;color:var(--figma-white);display:flex;flex-direction:column;gap:18px}
-    .phone-top{display:flex;align-items:center;gap:10px;font-size:13px;font-weight:800}
-    .avatar{width:34px;height:34px;border-radius:50%;background:linear-gradient(135deg,var(--figma-purple-soft),var(--figma-purple))}
-    .bubble{max-width:88%;padding:13px 15px;border-radius:20px;background:#ffe9b4;color:var(--figma-deep);font-size:13px;line-height:1.42}
-    .bubble.reply{margin-left:auto;background:#191919;color:#ffe9b4;border:1px solid #ffffff17}
     .metric-card{height:100%;border-radius:30px;background:var(--figma-surface);color:var(--figma-ink);padding:26px;display:flex;flex-direction:column;justify-content:space-between}
     .metric-card strong{font-size:clamp(48px,7vw,78px);line-height:.9}
     .metric-card span{color:var(--figma-soft-muted);font-size:14px;line-height:1.45}
     .check-list{display:grid;gap:12px}
-    .check{display:flex;align-items:center;gap:12px;min-height:52px;padding:10px 12px;border-radius:18px;background:#0000000a;color:var(--figma-ink);font-size:14px;font-weight:800}
+    .check{display:flex;align-items:center;gap:12px;min-height:52px;padding:10px 12px;border-radius:18px;background:var(--figma-line-soft);color:var(--figma-ink);font-size:14px;font-weight:800}
     .dot{width:18px;height:18px;border-radius:50%;background:var(--figma-green)}
+    .ig-post,.ig-phone,.ig-story{height:100%;border-radius:30px;background:var(--figma-surface-ice);color:var(--figma-ink);overflow:hidden;box-shadow:0 1px 0 var(--figma-line-soft)}
+    .ig-post{display:flex;flex-direction:column}
+    .ig-top,.ig-dm-top{min-height:58px;display:flex;align-items:center;gap:11px;padding:0 16px;border-bottom:1px solid var(--figma-nav-border)}
+    .ig-name{display:grid;gap:2px;font-size:13px;font-weight:900;line-height:1.15}
+    .ig-name span{color:var(--figma-soft-muted);font-size:11px;font-weight:800}
+    .ig-avatar{width:34px;height:34px;border-radius:50%;background:linear-gradient(135deg,var(--figma-purple),var(--figma-purple-soft) 48%,var(--figma-green));padding:2px;flex:0 0 auto}
+    .ig-avatar:before{content:"";display:block;width:100%;height:100%;border-radius:50%;background:var(--figma-surface-ice)}
+    .ig-more{margin-left:auto;color:var(--figma-muted);font-weight:900}
+    .ig-media{min-height:172px;margin:14px;border-radius:22px;background:linear-gradient(145deg,var(--figma-purple-soft),var(--figma-green));display:grid;place-items:center;color:var(--figma-ink);font-size:46px;font-family:var(--figma-font-display);font-weight:900}
+    .ig-actions{display:flex;align-items:center;gap:14px;padding:2px 16px 12px;color:var(--figma-ink);font-size:20px;font-weight:900}
+    .ig-save{margin-left:auto}
+    .ig-caption{padding:0 16px 16px;font-size:13px;line-height:1.5;color:var(--figma-muted)}
+    .ig-caption strong{color:var(--figma-ink)}
+    .ig-comment{margin-top:10px;padding:12px 14px;border-radius:18px;background:var(--figma-line-soft);color:var(--figma-ink);font-weight:900}
+    .ig-phone{display:flex;flex-direction:column;min-height:380px}
+    .ig-status{min-height:32px;display:flex;align-items:center;justify-content:space-between;padding:0 24px;color:var(--figma-ink);font-size:11px;font-weight:900}
+    .ig-dm-top{border-top:1px solid var(--figma-nav-border)}
+    .ig-back{font-size:22px;font-weight:900;line-height:1}
+    .ig-dm-actions{margin-left:auto;display:flex;gap:12px;color:var(--figma-ink);font-size:16px;font-weight:900}
+    .ig-thread{display:flex;flex:1;flex-direction:column;gap:10px;padding:16px;background:var(--figma-white)}
+    .ig-bubble{max-width:82%;padding:10px 13px;border-radius:18px;background:var(--figma-nav-border);color:var(--figma-ink);font-size:13px;line-height:1.38;font-weight:700}
+    .ig-bubble.out{align-self:flex-end;background:var(--figma-purple);color:var(--figma-white)}
+    .ig-input{min-height:42px;margin-top:auto;border:1px solid var(--figma-nav-border);border-radius:999px;display:flex;align-items:center;justify-content:space-between;padding:0 12px;color:var(--figma-soft-muted);font-size:12px;font-weight:800}
+    .ig-story{position:relative;min-height:380px;background:var(--figma-deep);color:var(--figma-white);padding:14px;display:flex;flex-direction:column;justify-content:space-between}
+    .ig-story:before{content:"";position:absolute;inset:14px;border-radius:24px;background:linear-gradient(145deg,var(--figma-purple),var(--figma-green));opacity:.82}
+    .ig-story > *{position:relative;z-index:1}
+    .ig-bars{display:grid;grid-template-columns:repeat(3,1fr);gap:5px}
+    .ig-bars span{height:3px;border-radius:999px;background:var(--figma-surface-glass)}
+    .ig-story-top{display:flex;align-items:center;gap:10px;margin-top:12px;font-size:12px;font-weight:900}
+    .ig-story-question{margin:auto 0 18px;padding:18px;border-radius:22px;background:var(--figma-surface-glass);backdrop-filter:blur(14px);color:var(--figma-ink);font-size:24px;line-height:1.05;font-family:var(--figma-font-display);font-weight:900}
+    .ig-story-reply{min-height:48px;border:1px solid var(--figma-surface-glass);border-radius:999px;padding:0 16px;display:flex;align-items:center;justify-content:space-between;background:var(--figma-deep-glass);font-size:13px;font-weight:800}
     .section{padding:116px 0}
     .split{display:grid;grid-template-columns:minmax(260px,.42fr) minmax(0,1fr);gap:78px;align-items:start}
     .eyebrow{display:block;margin-bottom:20px;color:var(--figma-purple);font-size:13px;font-weight:900;letter-spacing:.12em;text-transform:uppercase}
@@ -81,7 +109,7 @@
     .copy{display:grid;gap:20px}
     .cream{background:var(--figma-hero)}
     .module-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}
-    .module{border-radius:var(--figma-radius-card);background:var(--figma-surface);padding:30px;box-shadow:0 1px 0 #0000000d}
+    .module{border-radius:var(--figma-radius-card);background:var(--figma-surface);padding:30px;box-shadow:0 1px 0 var(--figma-line-soft)}
     .module.dark{background:var(--figma-deep);color:var(--figma-white);overflow:hidden}
     .module.dark h3,.module.dark p{color:var(--figma-white)}
     .module.dark p{opacity:.74}
@@ -95,11 +123,7 @@
     .feature-band .primary{background:var(--figma-white);color:var(--figma-ink);white-space:nowrap}
     .feature-band .primary:hover{background:var(--figma-purple-soft);color:var(--figma-ink)}
     .demo{display:grid;grid-template-columns:1fr .16fr 1fr;gap:18px;align-items:center}
-    .comment-box,.dm-box{min-height:370px;border-radius:42px;background:var(--figma-surface);padding:28px;color:var(--figma-ink)}
-    .comment-profile{display:flex;align-items:center;gap:14px;margin-bottom:36px}
-    .comment-lines{display:grid;gap:12px}
-    .line{height:16px;border-radius:999px;background:var(--figma-nav-border)}
-    .line.short{width:58%}
+    .demo .ig-post,.demo .ig-phone{min-height:430px;border-radius:34px}
     .keyword{display:inline-flex;align-items:center;min-height:48px;margin-top:30px;padding:0 18px;border-radius:var(--figma-radius-pill);background:var(--figma-ink);color:var(--figma-white);font-weight:900}
     .arrow{height:2px;background:var(--figma-purple);position:relative}
     .arrow:after{content:"";position:absolute;right:-1px;top:50%;width:13px;height:13px;border-top:2px solid var(--figma-purple);border-right:2px solid var(--figma-purple);transform:translateY(-50%) rotate(45deg)}
@@ -160,7 +184,8 @@
       .short-answer,p{font-size:16px}
       .section{padding:76px 0}
       h2{font-size:42px}
-      .module,.comment-box,.dm-box{border-radius:24px;padding:22px}
+      .module{border-radius:24px;padding:22px}
+      .demo .ig-post,.demo .ig-phone{border-radius:24px}
       .feature-band{padding:64px 0}
       table{display:block;overflow-x:auto}
       .latest-card img{width:100%;margin-top:24px}
@@ -198,12 +223,18 @@
       </div>
       <div class="hero-stage" aria-label="Instagram DM automation demonstration" data-od-id="hero-product-mockups">
         <article class="mock-card" data-od-id="hero-comment-card">
-          <div class="phone-panel">
-            <div class="phone-top"><span class="avatar"></span><strong>@luna_crafts</strong></div>
-            <div class="bubble">Guide please</div>
-            <div class="bubble reply">Got it. Reply “send” and I’ll DM the resource.</div>
-            <div class="bubble">send</div>
-            <div class="bubble reply">Here’s the free guide link. Want the checklist too?</div>
+          <div class="ig-post" aria-label="Instagram post comment trigger">
+            <div class="ig-top">
+              <span class="ig-avatar"></span>
+              <span class="ig-name">luna_crafts<span>Creator</span></span>
+              <span class="ig-more">•••</span>
+            </div>
+            <div class="ig-media">GUIDE</div>
+            <div class="ig-actions"><span>♡</span><span>⌕</span><span>↗</span><span class="ig-save">▱</span></div>
+            <div class="ig-caption">
+              <strong>luna_crafts</strong> Comment GUIDE and I’ll send the full checklist.
+              <div class="ig-comment"><strong>creator_fan</strong> GUIDE</div>
+            </div>
           </div>
         </article>
         <article class="mock-card" data-od-id="hero-free-plan-card">
@@ -217,11 +248,22 @@
             </div>
           </div>
         </article>
-        <article class="mock-card" data-od-id="hero-safety-card">
-          <div class="metric-card">
-            <span>Runs through official Meta APIs</span>
-            <img src="../assets/figma-feature/glass-check.png" width="1920" height="1080" alt="">
-            <div class="check">Meta Tech Provider information included</div>
+        <article class="mock-card" data-od-id="hero-dm-card">
+          <div class="ig-phone" aria-label="Instagram direct message thread">
+            <div class="ig-status"><span>9:41</span><span>LTE 100%</span></div>
+            <div class="ig-dm-top">
+              <span class="ig-back">‹</span>
+              <span class="ig-avatar"></span>
+              <span class="ig-name">luna_crafts<span>Active now</span></span>
+              <span class="ig-dm-actions">○ ⋯</span>
+            </div>
+            <div class="ig-thread">
+              <div class="ig-bubble out">GUIDE</div>
+              <div class="ig-bubble">Got your comment. Want the free automation checklist?</div>
+              <div class="ig-bubble out">send</div>
+              <div class="ig-bubble">Here’s the link. I can also send the setup steps.</div>
+              <div class="ig-input"><span>Message...</span><span>♡</span></div>
+            </div>
           </div>
         </article>
       </div>
@@ -269,18 +311,35 @@
         <div class="copy">
           <p>When someone comments on a post or reel, Zorcha can send the right DM while interest is still high. The flow can ask for a confirmation reply first, then deliver the resource, link, offer, or next step.</p>
           <div class="demo" data-od-id="comment-dm-demonstration">
-            <article class="comment-box" aria-label="Instagram comment">
-              <div class="comment-profile"><span class="avatar"></span><strong>@creator_fan</strong></div>
-              <div class="comment-lines"><span class="line"></span><span class="line short"></span></div>
-              <span class="keyword">Comment: GUIDE</span>
+            <article class="ig-post" aria-label="Instagram comment">
+              <div class="ig-top">
+                <span class="ig-avatar"></span>
+                <span class="ig-name">yourbrand<span>Reel</span></span>
+                <span class="ig-more">•••</span>
+              </div>
+              <div class="ig-media">NEW DROP</div>
+              <div class="ig-actions"><span>♡</span><span>⌕</span><span>↗</span><span class="ig-save">▱</span></div>
+              <div class="ig-caption">
+                <strong>yourbrand</strong> Comment GUIDE for the free launch checklist.
+                <div class="ig-comment"><strong>creator_fan</strong> GUIDE</div>
+                <div class="ig-comment"><strong>alex.creates</strong> Send it please</div>
+              </div>
             </article>
             <div class="arrow" aria-hidden="true"></div>
-            <article class="dm-box" aria-label="Automated Instagram DM">
-              <div class="phone-panel">
-                <div class="phone-top"><span class="avatar"></span><strong>@yourbrand</strong></div>
-                <div class="bubble">GUIDE</div>
-                <div class="bubble reply">Got your comment. Here’s the resource link.</div>
-                <div class="bubble">Send checklist too</div>
+            <article class="ig-phone" aria-label="Automated Instagram DM">
+              <div class="ig-status"><span>9:41</span><span>LTE 100%</span></div>
+              <div class="ig-dm-top">
+                <span class="ig-back">‹</span>
+                <span class="ig-avatar"></span>
+                <span class="ig-name">yourbrand<span>Business account</span></span>
+                <span class="ig-dm-actions">○ ⋯</span>
+              </div>
+              <div class="ig-thread">
+                <div class="ig-bubble out">GUIDE</div>
+                <div class="ig-bubble">Got your reel comment. Here’s the free checklist.</div>
+                <div class="ig-bubble">Want the 5-step setup next?</div>
+                <div class="ig-bubble out">Yes</div>
+                <div class="ig-input"><span>Message...</span><span>♡</span></div>
               </div>
             </article>
           </div>
@@ -292,8 +351,17 @@
       <div class="shell split">
         <div><span class="eyebrow">Inbox triggers</span><h2>Automate Instagram Story Replies</h2></div>
         <div class="module-grid">
-          <article class="module" data-od-id="story-replies-card"><h3>Story replies</h3><p>Story replies are high-intent because the follower is reacting to current content. Zorcha can move that moment into a useful DM flow.</p></article>
-          <article class="module" data-od-id="story-use-cases-card"><h3>Best use cases</h3><p>Use story automations for drops, webinars, limited offers, launches, event links, creator resources, and product questions.</p></article>
+          <article class="module" data-od-id="story-replies-card">
+            <div class="ig-story" aria-label="Instagram story reply trigger">
+              <div>
+                <div class="ig-bars"><span></span><span></span><span></span></div>
+                <div class="ig-story-top"><span class="ig-avatar"></span><strong>yourbrand</strong></div>
+              </div>
+              <div class="ig-story-question">Reply LINK to get early access</div>
+              <div class="ig-story-reply"><span>Send message</span><strong>LINK</strong></div>
+            </div>
+          </article>
+          <article class="module" data-od-id="story-use-cases-card"><h3>Story replies</h3><p>Story replies are high-intent because the follower is reacting to current content. Zorcha can move that moment into a useful DM flow for drops, webinars, limited offers, launches, event links, creator resources, and product questions.</p><span class="keyword">Trigger: story reply</span></article>
         </div>
       </div>
     </section>
