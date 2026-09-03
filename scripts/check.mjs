@@ -6,12 +6,15 @@ const rootUrl = new URL("../", import.meta.url);
 const root = fileURLToPath(rootUrl);
 const required = [
   "DESIGN.md",
+  "SKILL.md",
   "SOURCES.md",
   "tokens/foundation.css",
+  "tokens/tokens.json",
   "tokens/marketing.css",
   "tokens/product.css",
   "templates/marketing-page.html",
   "templates/dashboard-feature.html",
+  "examples/free-instagram-dm-automation.html",
   "index.html"
 ];
 

@@ -14,7 +14,8 @@ This repository separates the two real Zorcha surfaces instead of forcing them i
 3. Start from `templates/marketing-page.html` or `templates/dashboard-feature.html`.
 4. Open `index.html` for the visual catalog.
 5. Use `examples/free-instagram-dm-automation.html` as the SEO feature-page reference for `/free-instagram-dm-automation/`.
-6. Run `npm test` before committing.
+6. Read [`SKILL.md`](SKILL.md) when an agent is generating new Zorcha work.
+7. Run `npm test` before committing.
 
 ## Repository map
 
@@ -35,6 +36,7 @@ tokens/       Shared, marketing, and product token contracts
 - Preserve 44px minimum controls and visible `:focus-visible` states.
 - New reusable rules must be evidenced in Figma or a production Zorcha codebase.
 - SEO pages should keep the production feature-page rhythm: large product hero, answer-led body sections, real screenshots, comparison proof, FAQs, and repeated CTAs after every few sections.
+- Feature-page visuals should match the Figma/website component language: glass navbar, purple mark, navy wordmark, Instagram-like UI references, short modular sections, and movable feature assets where appropriate.
 
 ## Sources
 

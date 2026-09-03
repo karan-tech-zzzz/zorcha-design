@@ -22,6 +22,7 @@ Local absolute paths are documentation of extraction provenance only. This repos
 - Movable feature asset-board colors and shapes come from the imported AI FAQ-style Figma cards: stacked DM tiles, inbox triage cards, orbit dots, language chips, and dark rounded benefit panels.
 - `tokens/product.css` mirrors `zorcha-frontend/app/app.css`, including default, dark, semantic, and chart tokens.
 - `tokens/foundation.css` contains only shared scale and type aliases observed across both codebases.
+- `tokens/tokens.json` is the AI Optimize machine manifest that reconciles marketing and product tokens without flattening them into one black-only theme.
 
 ## Asset provenance
 
@@ -32,6 +33,10 @@ Local absolute paths are documentation of extraction provenance only. This repos
 - `assets/fonts/*` were copied from the local production repositories/extraction bundle.
 
 When adding an asset, append its original source and intended usage here.
+
+## AI Optimize pass
+
+The parent OpenDesign project was optimized in place on 2026-09-03. The canonical parent files are `../DESIGN.md`, `../brand.json`, `../brand-spec.md`, `../system/theme.json`, `../system/variables.optimized.css`, and `../system/optimized-preview.html`. This repository keeps the GitHub-ready subset of those rules for future implementation work.
 
 ## SEO feature-page example
 
