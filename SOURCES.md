@@ -26,6 +26,7 @@ Local absolute paths are documentation of extraction provenance only. This repos
 - `assets/brand/*` and `assets/marketing/*` were localized by the Zorcha website extraction.
 - `assets/product/get-started-*.webp` and `free-plan.webp` were localized from Zorcha's production asset CDN references found in `zorcha-frontend`.
 - `assets/figma-feature/*` is the minimal imported asset subset needed to reproduce the `feture_pages.fig` feature-page language.
+- `assets/figma-feature/ai-faq-feature-bg.webp`, `meta-tech-provider.webp`, and `jenny-dp.webp` are localized from Zorcha's production AI FAQ feature page to keep DM automation pages visually aligned with the real Instagram DM hero language.
 - `assets/fonts/*` were copied from the local production repositories/extraction bundle.
 
 When adding an asset, append its original source and intended usage here.
