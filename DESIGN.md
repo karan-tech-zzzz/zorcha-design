@@ -25,6 +25,7 @@ Choose the surface before layout. Do not combine their tokens casually.
 - Lead with one oversized Degular Display statement and a short Plus Jakarta Sans explanation.
 - Feature pages use the Figma `Desktop Navbar`: 764.66px wide, 55px tall, translucent `#fafafa99` shell, `#e9eded` stroke, 17px radius, purple mark, navy wordmark, divider, four center links, and one visible 11px-radius Sign In pill in the resting hero state.
 - DM/product feature pages use the production AI FAQ hero posture: dark scenic background, centered Meta Tech Provider badge, centered title/subtitle/action, and one focused Instagram DM mockup below the copy.
+- DM automation pages should prefer real Flow Builder and Instagram DM references over Link in Bio/editor scenery. Use scenic backgrounds only when the source feature page is explicitly AI FAQ or Link in Bio.
 - Purple is the action/energy signal; use it for the primary action, progress, or one decisive visual device.
 - Alternate editorial text fields with real imagery or product demonstrations; avoid repetitive feature-card grids.
 - SEO feature sections must stay scannable: one short answer, then cards, chips, stats, tables, screenshots, or accordions instead of continuous article paragraphs.

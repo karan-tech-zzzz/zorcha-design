@@ -70,8 +70,14 @@
     .nav-cta{min-height:38px;display:inline-flex;align-items:center;justify-content:center;padding:0 18px;border-radius:var(--zorcha-feature-nav-cta-radius);background:var(--figma-ink);color:var(--figma-white);font-size:14px;font-weight:800}
     .nav-cta:hover,.primary:hover{background:var(--figma-purple);color:var(--figma-white)}
     .hero{position:relative;min-height:100svh;background:var(--figma-deep);color:var(--figma-white);overflow:hidden;display:flex;flex-direction:column;justify-content:space-between}
-    .hero-bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
-    .hero:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,var(--figma-deep-glass),transparent 28%,var(--figma-deep-glass) 72%,var(--figma-deep))}
+    .hero-product-bg{position:absolute;inset:0;overflow:hidden;background:linear-gradient(180deg,var(--figma-deep),var(--figma-ink))}
+    .hero-product-bg:before{content:"";position:absolute;inset:0;background-image:radial-gradient(var(--figma-cream-glass) 1px,transparent 1px);background-size:24px 24px;opacity:.2}
+    .hero-product-bg:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,var(--figma-deep) 0%,transparent 30%,var(--figma-deep-glass) 66%,var(--figma-deep) 100%),radial-gradient(circle at 50% 22%,transparent 0 26%,var(--figma-deep-glass) 64%)}
+    .product-shot{position:absolute;display:block;border:1px solid var(--figma-board-line);border-radius:32px;background:var(--figma-surface-ice);box-shadow:0 36px 90px var(--figma-deep-glass);overflow:hidden}
+    .product-shot img{width:100%;height:100%;object-fit:cover;filter:saturate(.72) contrast(1.04)}
+    .product-shot.flow{left:-150px;bottom:34px;width:min(880px,66vw);aspect-ratio:1200/875;transform:rotate(-4deg);opacity:.42}
+    .product-shot.trigger{right:-84px;top:128px;width:min(760px,54vw);aspect-ratio:1200/782;transform:rotate(3deg);opacity:.54}
+    .product-shot.panel{left:9%;top:47%;width:min(430px,31vw);aspect-ratio:1200/1675;transform:rotate(5deg);opacity:.34}
     .hero-inner{position:relative;z-index:1;padding-top:clamp(132px,14svh,188px);text-align:center}
     .meta-badge{width:clamp(148px,18vw,220px);margin:0 auto 28px;filter:brightness(0) invert(1)}
     .hero h1{max-width:920px;margin:0 auto 24px;font-family:var(--figma-font-display);font-size:clamp(54px,7vw,104px);line-height:.9;letter-spacing:0}
@@ -248,6 +254,9 @@
       .nav-links{margin-left:auto;gap:12px}
       .nav-links a:nth-last-child(2){margin-left:0}
       .hero{min-height:auto;padding-bottom:80px}
+      .product-shot.flow{left:-220px;width:760px;opacity:.28}
+      .product-shot.trigger{right:-220px;width:680px;opacity:.36}
+      .product-shot.panel{display:none}
       .hero-inner{padding-top:128px}
       .hero-stage{margin-top:58px}
       .split,.module-grid,.screens,.stat-row,.pattern-grid,.keyword-grid,.safety-panel,.setup-grid,.compare-strip,.movable-grid{grid-template-columns:1fr}
@@ -260,6 +269,8 @@
     @media(max-width:560px){
       .shell{width:min(100% - 24px,var(--figma-max))}
       .hero h1{font-size:58px}
+      .product-shot.flow{left:-280px;bottom:140px;width:680px}
+      .product-shot.trigger{right:-270px;top:126px;width:620px}
       .hero-stage{margin-bottom:-270px}
       .hero-chat-shell{height:610px}
       .hero-chat-window{height:388px;padding:28px 18px 84px}
@@ -306,7 +317,11 @@
 
   <main>
     <section class="hero" data-od-id="hero-b">
-      <img class="hero-bg" src="../assets/figma-feature/ai-faq-feature-bg.webp" width="2500" height="1628" alt="">
+      <div class="hero-product-bg" aria-hidden="true" data-od-id="hero-flow-builder-background">
+        <span class="product-shot flow"><img src="../assets/figma-feature/flow-builder-step-3.webp" width="1200" height="875" alt=""></span>
+        <span class="product-shot trigger"><img src="../assets/figma-feature/flow-builder-step-1.webp" width="1200" height="782" alt=""></span>
+        <span class="product-shot panel"><img src="../assets/figma-feature/flow-builder-step-2.webp" width="1200" height="1675" alt=""></span>
+      </div>
       <div class="hero-inner shell">
         <img class="meta-badge" src="../assets/figma-feature/meta-tech-provider.webp" width="550" height="240" alt="Meta Verified Tech Provider badge">
         <h1 data-od-id="hero-heading">Free Unlimited Instagram DM Automation</h1>

@@ -29,7 +29,8 @@ Local absolute paths are documentation of extraction provenance only. This repos
 - `assets/brand/*` and `assets/marketing/*` were localized by the Zorcha website extraction.
 - `assets/product/get-started-*.webp` and `free-plan.webp` were localized from Zorcha's production asset CDN references found in `zorcha-frontend`.
 - `assets/figma-feature/*` is the minimal imported asset subset needed to reproduce the `feture_pages.fig` feature-page language.
-- `assets/figma-feature/ai-faq-feature-bg.webp`, `meta-tech-provider.webp`, and `jenny-dp.webp` are localized from Zorcha's production AI FAQ feature page to keep DM automation pages visually aligned with the real Instagram DM hero language.
+- `assets/figma-feature/meta-tech-provider.webp` and `jenny-dp.webp` are localized from Zorcha's production AI FAQ feature page for the trust badge and creator avatar only.
+- `assets/figma-feature/flow-builder-step-1.webp`, `flow-builder-step-2.webp`, and `flow-builder-step-3.webp` are localized from Zorcha Custom Flow Builder blog references and are preferred for DM automation hero/background treatments.
 - `assets/fonts/*` were copied from the local production repositories/extraction bundle.
 
 When adding an asset, append its original source and intended usage here.
@@ -45,6 +46,7 @@ The parent OpenDesign project was optimized in place on 2026-09-03. The canonica
 - Uses Figma feature-page tokens and the section rhythm observed in `/products/link-in-bio/` and `/products/ai-faq/`.
 - Uses `Desktop Navbar` values from `figma/tree.json` and the live feature-page resting state: 764.66px shell, 55px height, `#fafafa99` fill, `#e9eded` stroke, `#6a07e4` mark, `#071329` wordmark, `#1e2943` nav text, and one visible Sign In pill.
 - Uses Instagram-native post, story, and DM reference modules for comment-to-DM and reply demonstrations.
+- Uses localized Custom Flow Builder screenshots for the hero background so the page does not reuse the Link in Bio/editor visual world.
 - Uses actual localized Zorcha screenshots from `assets/product/`.
 - Uses public pricing language for Free plan positioning, including unlimited DMs, unlimited contacts, 20 FAQs, and upgrade-only advanced features.
 - Uses Zorcha's Meta Tech Provider page plus existing Comment to DM FAQ copy for safety and API messaging.
