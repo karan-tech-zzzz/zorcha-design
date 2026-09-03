@@ -7,11 +7,117 @@
   <link rel="stylesheet" href="tokens/foundation.css">
   <link rel="stylesheet" href="tokens/product.css">
   <style>
-    *{box-sizing:border-box}html{background:var(--zorcha-canvas);color:var(--zorcha-ink)}body{margin:0;font-family:var(--zorcha-font-body);font-weight:500}a{color:inherit;text-decoration:none}:focus-visible{outline:3px solid var(--zorcha-primary);outline-offset:3px}.nav{position:sticky;top:0;z-index:5;min-height:72px;display:flex;align-items:center;justify-content:space-between;gap:24px;padding:0 max(24px,calc((100vw - 1240px)/2));border-bottom:1px solid var(--zorcha-line-strong);background:var(--zorcha-surface)}.nav img{width:104px;height:auto}.nav div{display:flex;gap:18px;color:var(--zorcha-ink-muted);font-size:13px;font-weight:700}.shell{width:min(1240px,calc(100% - 32px));margin:auto}.intro{padding:96px 0 72px}.eyebrow{font-size:11px;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:var(--zorcha-primary)}h1{max-width:900px;margin:18px 0 24px;font-family:var(--zorcha-font-display);font-size:clamp(58px,9vw,120px);line-height:.84;letter-spacing:-.045em}.intro p{max-width:720px;margin:0;color:var(--zorcha-ink-muted);font-size:20px;line-height:1.55}.surface-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;padding-bottom:80px}.surface{min-height:500px;border:1px solid var(--zorcha-line-strong);border-radius:24px;overflow:hidden}.surface-head{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:18px;border-bottom:1px solid var(--zorcha-line-strong)}.surface-head h2{margin:0;font-size:18px}.surface-head a{font-size:12px;color:var(--zorcha-primary);font-weight:800}.marketing{position:relative;display:flex;flex-direction:column;justify-content:space-between;padding:32px;background:var(--zorcha-ink-deep);color:var(--zorcha-surface)}.marketing h3{max-width:480px;margin:64px 0 20px;font-family:var(--zorcha-font-display);font-size:clamp(52px,6vw,86px);line-height:.82;letter-spacing:-.035em}.marketing h3 em{color:var(--zorcha-primary-light)}.marketing p{max-width:480px;color:var(--zorcha-line-strong);line-height:1.6}.marketing .button{align-self:flex-start;min-height:44px;display:inline-flex;align-items:center;margin-top:28px;padding:0 18px;border-radius:999px;background:var(--zorcha-primary);font-weight:800}.product{background:var(--zorcha-line)}.product-frame{margin:16px;border:1px solid var(--zorcha-line-strong);border-radius:18px;background:var(--zorcha-surface);overflow:hidden}.product-head{padding:16px;border-bottom:1px solid var(--zorcha-line)}.product-head strong,.product-head span{display:block}.product-head span{margin-top:3px;color:var(--zorcha-ink-muted);font-size:11px}.metrics{display:grid;grid-template-columns:repeat(3,1fr)}.metric{padding:16px;border-right:1px solid var(--zorcha-line)}.metric:last-child{border:0}.metric span{color:var(--zorcha-ink-muted);font-size:10px}.metric b{display:block;margin-top:10px;font-size:22px}.chart{height:190px;display:grid;grid-template-columns:repeat(10,1fr);align-items:end;gap:6px;padding:24px 16px 16px;border-top:1px solid var(--zorcha-line)}.chart i{display:block;height:var(--h);min-height:4px;border-radius:5px 5px 0 0;background:var(--zorcha-chart-purple)}.rules{padding:0 0 96px}.rules h2{font-size:32px}.rule-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:8px}.rule{min-height:160px;padding:18px;border:1px solid var(--zorcha-line-strong);border-radius:18px;background:var(--zorcha-surface)}.rule b{display:block;margin-bottom:36px;color:var(--zorcha-primary)}.rule span{color:var(--zorcha-ink-muted);font-size:13px;line-height:1.55}@media(max-width:840px){.surface-grid,.rule-grid{grid-template-columns:1fr}.nav div a:not(:last-child){display:none}.intro{padding-top:64px}.surface{min-height:440px}}@media(max-width:480px){h1{font-size:58px}.shell{width:min(100% - 24px,1240px)}.intro p{font-size:17px}.marketing{padding:24px}.metrics{grid-template-columns:1fr}.metric{border-right:0;border-bottom:1px solid var(--zorcha-line)}}
+    *{box-sizing:border-box}
+    html{background:var(--zorcha-canvas);color:var(--zorcha-ink)}
+    body{margin:0;font-family:var(--zorcha-font-body);font-weight:500}
+    a{color:inherit;text-decoration:none}
+    img{display:block;max-width:100%;height:auto}
+    :focus-visible{outline:3px solid var(--zorcha-primary);outline-offset:3px}
+    .nav{position:sticky;top:0;z-index:5;min-height:72px;display:flex;align-items:center;justify-content:space-between;gap:24px;padding:0 max(24px,calc((100vw - 1240px)/2));border-bottom:1px solid var(--zorcha-line-strong);background:var(--zorcha-surface)}
+    .nav img{width:104px}
+    .nav div{display:flex;gap:18px;color:var(--zorcha-ink-muted);font-size:13px;font-weight:700}
+    .shell{width:min(1240px,calc(100% - 32px));margin:auto}
+    .intro{padding:96px 0 72px}
+    .eyebrow{font-size:11px;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:var(--zorcha-primary)}
+    h1{max-width:900px;margin:18px 0 24px;font-family:var(--zorcha-font-display);font-size:clamp(58px,9vw,120px);line-height:.84;letter-spacing:0}
+    .intro p{max-width:720px;margin:0;color:var(--zorcha-ink-muted);font-size:20px;line-height:1.55}
+    .surface-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;padding-bottom:80px}
+    .surface{min-height:500px;border:1px solid var(--zorcha-line-strong);border-radius:24px;overflow:hidden}
+    .marketing{position:relative;display:flex;flex-direction:column;justify-content:space-between;padding:32px;background:var(--zorcha-ink-deep);color:var(--zorcha-surface)}
+    .marketing h2{max-width:480px;margin:64px 0 20px;font-family:var(--zorcha-font-display);font-size:clamp(52px,6vw,86px);line-height:.82;letter-spacing:0}
+    .marketing h2 em{color:var(--zorcha-primary-light)}
+    .marketing p{max-width:480px;color:var(--zorcha-line-strong);line-height:1.6}
+    .button{min-height:44px;display:inline-flex;align-items:center;justify-content:center;margin-top:28px;padding:0 18px;border-radius:999px;background:var(--zorcha-primary);color:var(--zorcha-surface);font-weight:800}
+    .button:hover{background:var(--zorcha-ink-deep)}
+    .surface-head{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:18px;border-bottom:1px solid var(--zorcha-line-strong)}
+    .surface-head h2{margin:0;font-size:18px}
+    .surface-head a{font-size:12px;color:var(--zorcha-primary);font-weight:800}
+    .product{background:var(--zorcha-line)}
+    .product-frame{margin:16px;border:1px solid var(--zorcha-line-strong);border-radius:18px;background:var(--zorcha-surface);overflow:hidden}
+    .product-head{padding:16px;border-bottom:1px solid var(--zorcha-line)}
+    .product-head strong,.product-head span{display:block}
+    .product-head span{margin-top:3px;color:var(--zorcha-ink-muted);font-size:11px}
+    .metrics{display:grid;grid-template-columns:repeat(3,1fr)}
+    .metric{padding:16px;border-right:1px solid var(--zorcha-line)}
+    .metric:last-child{border:0}
+    .metric span{color:var(--zorcha-ink-muted);font-size:10px}
+    .metric b{display:block;margin-top:10px;font-size:22px}
+    .chart{height:190px;display:grid;grid-template-columns:repeat(10,1fr);align-items:end;gap:6px;padding:24px 16px 16px;border-top:1px solid var(--zorcha-line)}
+    .chart i{display:block;height:var(--h);min-height:4px;border-radius:5px 5px 0 0;background:var(--zorcha-chart-purple)}
+    .examples{padding:0 0 96px}
+    .examples h2,.rules h2{font-size:32px}
+    .example-grid,.rule-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
+    .example,.rule{min-height:170px;padding:18px;border:1px solid var(--zorcha-line-strong);border-radius:18px;background:var(--zorcha-surface)}
+    .example b,.rule b{display:block;margin-bottom:36px;color:var(--zorcha-primary)}
+    .example span,.rule span{color:var(--zorcha-ink-muted);font-size:13px;line-height:1.55}
+    .rules{padding:0 0 96px}
+    .rule-grid{grid-template-columns:repeat(4,1fr)}
+    @media(max-width:840px){.surface-grid,.example-grid,.rule-grid{grid-template-columns:1fr}.nav div a:not(:last-child){display:none}.intro{padding-top:64px}.surface{min-height:440px}}
+    @media(max-width:480px){h1{font-size:58px}.shell{width:min(100% - 24px,1240px)}.intro p{font-size:17px}.marketing{padding:24px}.metrics{grid-template-columns:1fr}.metric{border-right:0;border-bottom:1px solid var(--zorcha-line)}}
   </style>
 </head>
 <body>
-  <header class="nav" data-od-id="catalog-navigation"><a href="#"><img src="assets/brand/zorcha-wordmark.svg" width="81" height="20" alt="Zorcha"></a><div><a href="DESIGN.md">Design rules</a><a href="tokens/tokens.json">Tokens</a><a href="templates/marketing-page.html">Marketing template</a><a href="templates/dashboard-feature.html">Product template</a></div></header>
-  <main class="shell"><section class="intro" data-od-id="catalog-intro"><span class="eyebrow">Zorcha design language</span><h1 data-od-id="catalog-heading">One brand.<br>Two modes.</h1><p>Expressive where Zorcha earns attention. Focused where creators build, automate, and grow.</p></section><section class="surface-grid" data-od-id="surface-comparison"><article class="surface marketing" data-od-id="marketing-surface"><div><span class="eyebrow">Marketing</span><h3>Attention into <em>action.</em></h3><p>Degular Display, strong campaign imagery, spacious storytelling, and one decisive purple action.</p><a class="button" href="templates/marketing-page.html">Open starter</a></div></article><article class="surface product" data-od-id="product-surface"><div class="surface-head"><h2>Product</h2><a href="templates/dashboard-feature.html">Open starter</a></div><div class="product-frame"><div class="product-head"><strong>Growth &amp; Engagement</strong><span>Operational, compact, and truthful</span></div><div class="metrics"><div class="metric"><span>Messages sent</span><b>0</b></div><div class="metric"><span>Followers gained</span><b>0</b></div><div class="metric"><span>FAQs answered</span><b>0</b></div></div><div class="chart" aria-label="Example filled chart encoding"><i style="--h:14%"></i><i style="--h:22%"></i><i style="--h:38%"></i><i style="--h:31%"></i><i style="--h:52%"></i><i style="--h:48%"></i><i style="--h:63%"></i><i style="--h:74%"></i><i style="--h:68%"></i><i style="--h:86%"></i></div></div></article></section><section class="rules" data-od-id="core-rules"><span class="eyebrow">Core contract</span><h2>How new work stays Zorcha.</h2><div class="rule-grid"><article class="rule"><b>01</b><span>Choose marketing or product before choosing components.</span></article><article class="rule"><b>02</b><span>Use real assets and product language. Never fabricate live metrics.</span></article><article class="rule"><b>03</b><span>Keep controls accessible and mobile layouts intentionally reordered.</span></article><article class="rule"><b>04</b><span>Evidence every new reusable pattern in Figma or production code.</span></article></div></section></main>
+  <header class="nav" data-od-id="catalog-navigation">
+    <a href="#"><img src="assets/brand/zorcha-wordmark.svg" width="81" height="20" alt="Zorcha"></a>
+    <div>
+      <a href="DESIGN.md">Design rules</a>
+      <a href="tokens/tokens.json">Tokens</a>
+      <a href="templates/marketing-page.html">Marketing template</a>
+      <a href="templates/dashboard-feature.html">Product template</a>
+    </div>
+  </header>
+  <main class="shell">
+    <section class="intro" data-od-id="catalog-intro">
+      <span class="eyebrow">Zorcha design language</span>
+      <h1 data-od-id="catalog-heading">One brand.<br>Two modes.</h1>
+      <p>Expressive where Zorcha earns attention. Focused where creators build, automate, and grow.</p>
+    </section>
+
+    <section class="surface-grid" data-od-id="surface-comparison">
+      <article class="surface marketing" data-od-id="marketing-surface">
+        <div>
+          <span class="eyebrow">Marketing</span>
+          <h2>Attention into <em>action.</em></h2>
+          <p>Degular Display, strong campaign imagery, spacious storytelling, and one decisive purple action.</p>
+          <a class="button" href="templates/marketing-page.html">Open starter</a>
+        </div>
+      </article>
+      <article class="surface product" data-od-id="product-surface">
+        <div class="surface-head"><h2>Product</h2><a href="templates/dashboard-feature.html">Open starter</a></div>
+        <div class="product-frame">
+          <div class="product-head"><strong>Growth &amp; Engagement</strong><span>Operational, compact, and truthful</span></div>
+          <div class="metrics">
+            <div class="metric"><span>Messages sent</span><b>0</b></div>
+            <div class="metric"><span>Followers gained</span><b>0</b></div>
+            <div class="metric"><span>FAQs answered</span><b>0</b></div>
+          </div>
+          <div class="chart" aria-label="Example filled chart encoding">
+            <i style="--h:14%"></i><i style="--h:22%"></i><i style="--h:38%"></i><i style="--h:31%"></i><i style="--h:52%"></i><i style="--h:48%"></i><i style="--h:63%"></i><i style="--h:74%"></i><i style="--h:68%"></i><i style="--h:86%"></i>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <section class="examples" data-od-id="examples">
+      <span class="eyebrow">Examples</span>
+      <h2>Finished references</h2>
+      <div class="example-grid">
+        <a class="example" href="examples/free-instagram-dm-automation.html" data-od-id="example-free-instagram-dm-automation"><b>SEO page</b><span>Free Unlimited Instagram DM Automation feature page built to match Zorcha product pages.</span></a>
+        <a class="example" href="examples/marketing-home.html" data-od-id="example-marketing-home"><b>Marketing</b><span>Public website rhythm, headline scale, and action-led story structure.</span></a>
+        <a class="example" href="examples/dashboard-home.html" data-od-id="example-dashboard-home"><b>Dashboard</b><span>Operational product home with compact cards, setup flow, and truthful zero-state metrics.</span></a>
+      </div>
+    </section>
+
+    <section class="rules" data-od-id="core-rules">
+      <span class="eyebrow">Core contract</span>
+      <h2>How new work stays Zorcha.</h2>
+      <div class="rule-grid">
+        <article class="rule"><b>01</b><span>Choose marketing or product before choosing components.</span></article>
+        <article class="rule"><b>02</b><span>Use real assets and product language. Never fabricate live metrics.</span></article>
+        <article class="rule"><b>03</b><span>Keep controls accessible and mobile layouts intentionally reordered.</span></article>
+        <article class="rule"><b>04</b><span>Evidence every new reusable pattern in Figma or production code.</span></article>
+      </div>
+    </section>
+  </main>
 </body>
 </html>

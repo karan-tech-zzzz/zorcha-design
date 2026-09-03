@@ -13,7 +13,8 @@ This repository separates the two real Zorcha surfaces instead of forcing them i
 2. Pick one surface: `tokens/marketing.css` or `tokens/product.css`.
 3. Start from `templates/marketing-page.html` or `templates/dashboard-feature.html`.
 4. Open `index.html` for the visual catalog.
-5. Run `npm test` before committing.
+5. Use `examples/free-instagram-dm-automation.html` as the SEO feature-page reference for `/free-instagram-dm-automation/`.
+6. Run `npm test` before committing.
 
 ## Repository map
 
@@ -33,6 +34,7 @@ tokens/       Shared, marketing, and product token contracts
 - Use real product language and honest empty states. Do not invent customer metrics.
 - Preserve 44px minimum controls and visible `:focus-visible` states.
 - New reusable rules must be evidenced in Figma or a production Zorcha codebase.
+- SEO pages should keep the production feature-page rhythm: large product hero, answer-led body sections, real screenshots, comparison proof, FAQs, and repeated CTAs after every few sections.
 
 ## Sources
 

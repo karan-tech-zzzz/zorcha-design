@@ -9,6 +9,14 @@
 5. Feature storytelling in alternating compositions.
 6. One closing action and a practical footer.
 
+## SEO feature pages
+
+- Start with the exact search-answer H1 and a concise short answer in the first viewport.
+- Keep the same feature-page visual language as product pages: large Degular hero, off-white content field, real product screenshots, and rounded proof modules.
+- Place a clear CTA after every two or three content sections, varying CTA copy by context.
+- Include a comparison table only when it helps the query; keep claims sourced to pricing, help, or production copy.
+- Keep FAQ content practical and direct. Avoid keyword-stuffed repetition.
+
 ## Type
 
 - Hero display: `clamp(3.5rem, 9vw, 8rem)`, tight leading and tracking.

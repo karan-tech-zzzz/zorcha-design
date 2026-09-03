@@ -8,6 +8,8 @@
 | Figma `wW6gXcwziryBMQ1aZpkxLx` | Website and dashboard design suite |
 | `/Users/home/Projects/z/zorcha-website` | Marketing production implementation |
 | `/Users/home/Projects/z/zorcha-frontend` | Dashboard/product production implementation |
+| `https://zorcha.com/pricing/` | Current free-plan language and public plan positioning |
+| `https://zorcha.com/meta-verified/` | Meta Tech Provider and official API messaging |
 
 Local absolute paths are documentation of extraction provenance only. This repository does not depend on them at runtime.
 
@@ -24,3 +26,12 @@ Local absolute paths are documentation of extraction provenance only. This repos
 - `assets/fonts/*` were copied from the local production repositories/extraction bundle.
 
 When adding an asset, append its original source and intended usage here.
+
+## SEO feature-page example
+
+`examples/free-instagram-dm-automation.html` records the page model for `/free-instagram-dm-automation/`:
+
+- Uses the marketing surface tokens and feature-page section rhythm observed in `/products/link-in-bio/` and `/products/ai-faq/`.
+- Uses actual localized Zorcha screenshots from `assets/product/`.
+- Uses public pricing language for Free plan positioning, including unlimited DMs, unlimited contacts, 20 FAQs, and upgrade-only advanced features.
+- Uses Zorcha's Meta Tech Provider page plus existing Comment to DM FAQ copy for safety and API messaging.
